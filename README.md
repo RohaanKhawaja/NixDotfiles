@@ -1,6 +1,7 @@
 # Rohaan's Dotfile Setup for NixOS (and other distros)
 
-Designed to be portable between different operating systems but primarily for use with NixOS
+Dotfiles setup designed to be portable between different operating systems but primarily for use with NixOS.
+This is written for use on an Acer Swift 16 AI 2026 model running Niri with Noctalia Shell as the desktop environment.
 
 ## Step by step setup guide
 
@@ -17,11 +18,7 @@ git clone https://github.com/RohaanKhawaja/NixOS-Dotfiles ~/dotfiles
 ```
 nvim ~/dotfiles/nixos/modules/user.nix
 ```
-5. Open `configuration.nix` and comment out all desktop modules other than the one you wish to use.
-```
-nvim ~/dotfiles/nixos/configuration.nix
-```
-6. Modify the user attributes in `configuration.nix` to match your user name, home directory, and desktop choice.
+6. Modify the user attributes in `configuration.nix` to match your user name, host-name, and home directory
 7. Delete the default `configuration.nix` file at `/etc/nixos` using:
 ```
 sudo rm configuration.nix
@@ -40,4 +37,3 @@ stow directory1 directory2 ...
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 and then install it using `<CTRL+S> + I`
-
