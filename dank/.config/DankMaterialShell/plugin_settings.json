@@ -1,0 +1,8 @@
+{
+  "caffeine": {
+    "enabled": false
+  },
+  "powerOptions": {
+    "enabled": true
+  }
+}
