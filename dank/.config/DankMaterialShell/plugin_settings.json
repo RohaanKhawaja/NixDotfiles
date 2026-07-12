@@ -4,5 +4,8 @@
   },
   "powerOptions": {
     "enabled": true
+  },
+  "mpvpaperWallpaper": {
+    "enabled": true
   }
 }
