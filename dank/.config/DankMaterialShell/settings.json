@@ -9,7 +9,7 @@
   "popupTransparency": 1,
   "dockTransparency": 1,
   "widgetBackgroundColor": "sch",
-  "widgetColorMode": "colorful",
+  "widgetColorMode": "default",
   "controlCenterTileColorMode": "primary",
   "buttonColorMode": "primary",
   "cornerRadius": 12,
@@ -186,9 +186,7 @@
   "appLauncherGridColumns": 4,
   "spotlightCloseNiriOverview": true,
   "spotlightSectionViewModes": {},
-  "appDrawerSectionViewModes": {
-    "apps": "list"
-  },
+  "appDrawerSectionViewModes": {},
   "niriOverviewOverlayEnabled": true,
   "dankLauncherV2Size": "compact",
   "dankLauncherV2BorderEnabled": false,
@@ -198,7 +196,7 @@
   "dankLauncherV2UnloadOnClose": false,
   "useAutoLocation": false,
   "weatherEnabled": true,
-  "networkPreference": "wifi",
+  "networkPreference": "auto",
   "iconTheme": "System Default",
   "cursorSettings": {
     "theme": "BreezeX-RosePine-Linux",
@@ -216,15 +214,15 @@
       "cursorHideTimeout": 0
     }
   },
-  "launcherLogoMode": "os",
+  "launcherLogoMode": "apps",
   "launcherLogoCustomPath": "",
-  "launcherLogoColorOverride": "primary",
+  "launcherLogoColorOverride": "",
   "launcherLogoColorInvertOnMode": false,
   "launcherLogoBrightness": 0.5,
   "launcherLogoContrast": 1,
   "launcherLogoSizeOffset": 0,
   "fontFamily": "Inter Variable",
-  "monoFontFamily": "JetBrainsMono NF",
+  "monoFontFamily": "Fira Code",
   "fontWeight": 400,
   "fontScale": 1,
   "notepadUseMonospace": true,
@@ -241,15 +239,15 @@
   "acMonitorTimeout": 0,
   "acLockTimeout": 0,
   "acSuspendTimeout": 0,
-  "acSuspendBehavior": 2,
+  "acSuspendBehavior": 0,
   "acProfileName": "",
   "batteryMonitorTimeout": 0,
   "batteryLockTimeout": 0,
   "batterySuspendTimeout": 0,
-  "batterySuspendBehavior": 2,
+  "batterySuspendBehavior": 0,
   "batteryProfileName": "",
   "batteryChargeLimit": 100,
-  "lockBeforeSuspend": true,
+  "lockBeforeSuspend": false,
   "loginctlLockIntegration": true,
   "fadeToLockEnabled": true,
   "fadeToLockGracePeriod": 5,
@@ -257,13 +255,7 @@
   "fadeToDpmsGracePeriod": 5,
   "launchPrefix": "",
   "brightnessDevicePins": {},
-  "wifiNetworkPins": {
-    "preferredWifi": [
-      "Bakerkhani_premium",
-      "BTB-625JFM",
-      "pocof6"
-    ]
-  },
+  "wifiNetworkPins": {},
   "bluetoothDevicePins": {},
   "audioInputDevicePins": {},
   "audioOutputDevicePins": {},
@@ -299,7 +291,7 @@
   "matugenTemplateEmacs": true,
   "matugenTemplateZed": true,
   "showDock": false,
-  "dockAutoHide": true,
+  "dockAutoHide": false,
   "dockSmartAutoHide": false,
   "dockGroupByApp": false,
   "dockOpenOnOverview": false,
@@ -378,8 +370,7 @@
     "poweroff",
     "lock",
     "suspend",
-    "restart",
-    "hibernate"
+    "restart"
   ],
   "powerMenuDefaultAction": "logout",
   "powerMenuGridLayout": false,
@@ -394,11 +385,7 @@
   "updaterCustomCommand": "",
   "updaterTerminalAdditionalParams": "",
   "displayNameMode": "system",
-  "screenPreferences": {
-    "wallpaper": [
-      "all"
-    ]
-  },
+  "screenPreferences": {},
   "showOnLastDisplay": {},
   "niriOutputSettings": {},
   "hyprlandOutputSettings": {},
@@ -418,63 +405,28 @@
       ],
       "showOnLastDisplay": true,
       "leftWidgets": [
-        {
-          "id": "launcherButton",
-          "enabled": true
-        },
-        {
-          "id": "workspaceSwitcher",
-          "enabled": true
-        },
-        {
-          "id": "focusedWindow",
-          "enabled": true
-        }
+        "launcherButton",
+        "workspaceSwitcher",
+        "focusedWindow"
       ],
       "centerWidgets": [
-        {
-          "id": "music",
-          "enabled": true
-        },
-        {
-          "id": "clock",
-          "enabled": true
-        },
-        {
-          "id": "weather",
-          "enabled": true
-        }
+        "music",
+        "clock",
+        "weather"
       ],
       "rightWidgets": [
-        {
-          "id": "systemTray",
-          "enabled": true
-        },
-        {
-          "id": "clipboard",
-          "enabled": true
-        },
-        {
-          "id": "notificationButton",
-          "enabled": true
-        },
-        {
-          "id": "battery",
-          "enabled": true
-        },
-        {
-          "id": "controlCenterButton",
-          "enabled": true
-        },
-        {
-          "id": "idleInhibitor",
-          "enabled": true
-        }
+        "systemTray",
+        "clipboard",
+        "cpuUsage",
+        "memUsage",
+        "notificationButton",
+        "battery",
+        "controlCenterButton"
       ],
-      "spacing": 0,
-      "innerPadding": -8,
-      "bottomGap": -1,
-      "transparency": 0,
+      "spacing": 4,
+      "innerPadding": 4,
+      "bottomGap": 0,
+      "transparency": 1,
       "widgetTransparency": 1,
       "squareCorners": false,
       "noBackground": false,
@@ -496,8 +448,8 @@
       "fontScale": 1,
       "iconScale": 1,
       "autoHide": false,
-      "autoHideDelay": 152,
-      "showOnWindowsOpen": true,
+      "autoHideDelay": 250,
+      "showOnWindowsOpen": false,
       "openOnOverview": false,
       "visible": true,
       "popupGapsAuto": true,
@@ -584,11 +536,7 @@
   "desktopWidgetGridSettings": {},
   "desktopWidgetInstances": [],
   "desktopWidgetGroups": [],
-  "builtInPluginSettings": {
-    "dms_settings_search": {
-      "trigger": "$"
-    }
-  },
+  "builtInPluginSettings": {},
   "clipboardEnterToPaste": false,
   "launcherPluginVisibility": {},
   "launcherPluginOrder": [],

@@ -3,13 +3,6 @@ if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
-# Start hyprland immediately after autologin
-# if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
-#   if [ "$MY_DESKTOP" = "hyprland" ]; then
-#     exec uwsm start hyprland.desktop
-#   fi
-# fi
-
 # Start ssh-agent if not running
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     eval "$(ssh-agent -s)"
