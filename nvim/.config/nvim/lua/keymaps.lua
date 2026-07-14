@@ -115,5 +115,5 @@ local function tmux_open(args)
   end
 end
 
-vim.keymap.set("n", "gf", tmux_open({ "split-window", "-v" }))
-vim.keymap.set("n", "gF", tmux_open({ "new-window" }))
+vim.keymap.set("n", "gF", tmux_open({ "split-window", "-v" }))
+vim.keymap.set("n", "<Leader>gf", tmux_open({ "new-window" }))
