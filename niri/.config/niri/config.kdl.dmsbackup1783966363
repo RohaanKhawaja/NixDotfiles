@@ -46,7 +46,7 @@ include "modules/input.kdl"
 // https://niri-wm.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 0
+    gaps 1
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -200,10 +200,10 @@ layout {
 // Add lines like this to spawn processes at startup.
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
-// See Autostart
+// See the binds section below for more spawn examples.
 
-// Autostart
-// spawn-at-startup "firefox"
+// This line starts waybar, a commonly used bar for Wayland compositors.
+spawn-at-startup "firefox"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -232,11 +232,11 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 // The wiki explains how to configure individual animations:
 // https://niri-wm.github.io/niri/Configuration:-Animations
 animations {
-   // Uncomment to turn off all animations.
+    // Uncomment to turn off all animations.
     // off
 
     // Slow down all animations by this factor. Values below 1 speed them up instead.
-    slowdown 0.3
+     slowdown 0.3
 }
 
 // Window rules let you adjust behavior for individual windows.
@@ -251,17 +251,6 @@ window-rule {
     // You can get away with just app-id="wezterm" if you want.
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
     default-column-width {}
-}
-
-window-rule {
-    match app-id="kitty"
-    opacity 0.95
-}
-
-window-rule {
-    match title="Settings"
-    match app-id="org.quickshell"
-    opacity 0.95
 }
 
 // Open the Firefox picture-in-picture player as floating by default.
@@ -285,14 +274,10 @@ window-rule {
     // block-out-from "screencast"
 }
 
-cursor {
-    xcursor-theme "BreezeX-RosePine-Linux"
-    xcursor-size 24
-}
-
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
     // geometry-corner-radius 12
     clip-to-geometry true
 }
+

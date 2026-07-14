@@ -73,3 +73,47 @@ local keymaps = {
 for _, k in ipairs(keymaps) do
   map(k[1], k[2], k[3])
 end
+
+
+local function resolve_cfile()
+  local raw = vim.fn.expand("<cfile>")
+  local name = raw
+
+  -- apply the buffer's includeexpr (e.g. dots → slashes for lua modules)
+  local iexpr = vim.bo.includeexpr
+  if iexpr ~= "" then
+    local expr = iexpr:gsub("v:fname", vim.fn.string(raw))
+    local ok, res = pcall(vim.fn.eval, expr)
+    if ok and res ~= nil and res ~= "" then
+      name = res
+    end
+  end
+
+  -- search 'path' respecting 'suffixesadd', like gf does
+  local found = vim.fn.findfile(name, vim.bo.path)
+  if found == "" then
+    found = vim.fn.findfile(raw, vim.bo.path)
+  end
+  return found ~= "" and vim.fn.fnamemodify(found, ":p") or nil
+end
+
+local function tmux_open(args)
+  return function()
+    if not vim.env.TMUX then
+      vim.cmd("normal! " .. (args[1] == "new-window" and "gF" or "gf"))
+      return
+    end
+    local file = resolve_cfile()
+    if not file then
+      vim.notify("File not found: " .. vim.fn.expand("<cfile>"), vim.log.levels.WARN)
+      return
+    end
+    local cmd = { "tmux" }
+    vim.list_extend(cmd, args)
+    vim.list_extend(cmd, { "nvim " .. vim.fn.shellescape(file) })
+    vim.fn.system(cmd)
+  end
+end
+
+vim.keymap.set("n", "gf", tmux_open({ "split-window", "-v" }))
+vim.keymap.set("n", "gF", tmux_open({ "new-window" }))

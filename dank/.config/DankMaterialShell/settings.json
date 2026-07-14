@@ -166,7 +166,33 @@
   "runningAppsCurrentWorkspace": true,
   "runningAppsGroupByApp": false,
   "runningAppsCurrentMonitor": false,
-  "appIdSubstitutions": [],
+  "appIdSubstitutions": [
+    {
+      "pattern": "Spotify",
+      "replacement": "spotify",
+      "type": "exact"
+    },
+    {
+      "pattern": "beepertexts",
+      "replacement": "beeper",
+      "type": "exact"
+    },
+    {
+      "pattern": "home assistant desktop",
+      "replacement": "homeassistant-desktop",
+      "type": "exact"
+    },
+    {
+      "pattern": "com.transmissionbt.transmission",
+      "replacement": "transmission-gtk",
+      "type": "contains"
+    },
+    {
+      "pattern": "^steam_app_(\\d+)$",
+      "replacement": "steam_icon_$1",
+      "type": "regex"
+    }
+  ],
   "centeringMode": "index",
   "clockDateFormat": "",
   "lockDateFormat": "",
@@ -196,7 +222,7 @@
   "dankLauncherV2UnloadOnClose": false,
   "useAutoLocation": false,
   "weatherEnabled": true,
-  "networkPreference": "auto",
+  "networkPreference": "wifi",
   "iconTheme": "System Default",
   "cursorSettings": {
     "theme": "BreezeX-RosePine-Linux",
@@ -225,10 +251,10 @@
   "monoFontFamily": "Fira Code",
   "fontWeight": 400,
   "fontScale": 1,
-  "notepadUseMonospace": true,
+  "notepadUseMonospace": false,
   "notepadFontFamily": "",
   "notepadFontSize": 14,
-  "notepadShowLineNumbers": false,
+  "notepadShowLineNumbers": true,
   "notepadTransparencyOverride": -1,
   "notepadLastCustomTransparency": 0.7,
   "soundsEnabled": true,
@@ -419,12 +445,25 @@
         },
         {
           "id": "focusedWindow",
+          "enabled": true,
+          "focusedWindowCompactMode": false
+        },
+        {
+          "id": "mpvpaperWallpaper",
           "enabled": true
         }
       ],
       "centerWidgets": [
-        "music",
-        "clock",
+        {
+          "id": "music",
+          "enabled": true,
+          "mediaSize": 1
+        },
+        {
+          "id": "clock",
+          "enabled": true,
+          "clockCompactMode": false
+        },
         "weather"
       ],
       "rightWidgets": [
@@ -438,11 +477,13 @@
         },
         {
           "id": "cpuUsage",
-          "enabled": true
+          "enabled": true,
+          "minimumWidth": true
         },
         {
           "id": "memUsage",
-          "enabled": true
+          "enabled": true,
+          "minimumWidth": true
         },
         {
           "id": "notificationButton",
@@ -576,7 +617,11 @@
     }
   },
   "clipboardEnterToPaste": false,
-  "launcherPluginVisibility": {},
+  "launcherPluginVisibility": {
+    "dms_settings_search": {
+      "allowWithoutTrigger": true
+    }
+  },
   "launcherPluginOrder": [],
   "configVersion": 5
 }

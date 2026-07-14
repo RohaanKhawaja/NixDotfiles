@@ -34,6 +34,8 @@ in
     ripgrep                   # Better Grep
     bat                       # Better cat
     nix-search-tv             # FZF For Nix Packages/Options
+    zip                       # Zip file utility
+    unzip                       # Zip file utility
 
     # CLI Apps
     btop                      # System Resource Monitor

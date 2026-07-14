@@ -13,4 +13,23 @@
     MatchProduct=0x4813
     AttrEventCode=-ABS_MT_PRESSURE;-ABS_PRESSURE;-ABS_MT_DISTANCE;-ABS_MT_TOUCH_MAJOR;-ABS_MT_TOUCH_MINOR
   '';
+
+  # Palm rejection solution
+  services.libinput = {
+    enable = true;
+    touchpad = {
+      disableWhileTyping  = true;
+      tapping             = true;
+      naturalScrolling    = true;
+      clickMethod         = "clickfinger";
+      accelProfile        = "flat";
+      #sendEventsMode     = "disabled-on-external-mouse";
+    };
+  };
+  services.libinput.touchpad.additionalOptions = ''
+    Option "PalmDetection" "on"
+    Option "PalmMinWidth" "8"
+    Option "PalmMinZ" "100"
+  '';
+
 }

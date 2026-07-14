@@ -38,7 +38,7 @@
     switcheroo                # File convertor
 
     # Creative Tools
-    #bambu-studio             # 3D Printing Slicer (HAS BUILD ISSUES - use flatpak) 
+    #bambu-studio             # 3D Printing Slicer (HAS BUILD ISSUES - use flatpak)
     kicad                     # Circuit & PCB Design Suite
     freecad                   # General CAD
     ltspice                   # Circuit Simulation

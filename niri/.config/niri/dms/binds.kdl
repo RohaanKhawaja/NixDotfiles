@@ -1,4 +1,0 @@
-binds {
-    Super+space hotkey-overlay-title="App Launcher: Toggle" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
-    Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-}

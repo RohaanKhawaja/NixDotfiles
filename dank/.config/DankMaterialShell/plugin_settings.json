@@ -6,6 +6,20 @@
     "enabled": true
   },
   "mpvpaperWallpaper": {
-    "enabled": true
+    "enabled": true,
+    "monitorPaths": {
+      "eDP-1": "/home/rohaan/Pictures/Wallpapers/Live_Wallpapers/blackhole.mp4"
+    },
+    "panscanValue": 0.98,
+    "generateStaticWallpaper": false,
+    "customMpvOptions": "",
+    "allMonitors": false
+  },
+  "commandRunner": {
+    "enabled": true,
+    "history": [
+      "sudo umount /dev/sda1",
+      "usbUnmount"
+    ]
   }
 }

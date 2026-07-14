@@ -18,6 +18,7 @@ alias ff='fastfetch'
 alias bs='source ~/.bashrc'
 alias history='bat ~/.bash_history | rg'
 alias copyPath='pwd | wl-copy'
+alias battery='echo "$(cat /sys/class/power_supply/BAT1/capacity)% - $(cat /sys/class/power_supply/BAT1/status)"'
 
 # Aliases for mounting/unmounting
 alias usbMount='sudo mount /dev/sda1 /mnt/usb && echo USB MOUNTED!'
@@ -38,7 +39,7 @@ alias gm='git merge origin main'
 alias gp='git pull'
 alias gpr='git push -u origin main'
 
-# Neovim Related Aliases
+# Neovim Related Aliases/Functions
 alias v='nvim .'
 # Greps file names in directory before oepning in nvim
 function vf() {

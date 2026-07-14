@@ -20,6 +20,9 @@
       ./modules/system/maintenance.nix
       ./modules/system/audio.nix
 
+      # Virtualisation
+      ./modules/system/vm.nix
+
       # Laptop Specific Settings
       ./modules/system/acer.nix
 
