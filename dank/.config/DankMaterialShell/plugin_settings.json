@@ -18,6 +18,8 @@
   "commandRunner": {
     "enabled": true,
     "history": [
+      "sudo mount /dev/sda1 /mnt/usb",
+      "usbMount",
       "vek",
       "sudo umount /dev/sda1",
       "usbUnmount"

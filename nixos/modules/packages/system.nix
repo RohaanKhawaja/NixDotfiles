@@ -25,6 +25,13 @@
     libsForQt5.qt5.qtwayland  # QT5 Wayland
     kdePackages.qt6ct         # QT6 Configuration
     kdePackages.qtwayland     # QT6 Wayland
+
+    # GTK Framework
+    adw-gtk3
+
+    # Colour Themeing
+    matugen
+    dracula-theme
   ];
 
 }
