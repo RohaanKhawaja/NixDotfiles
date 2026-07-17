@@ -255,7 +255,11 @@
   "fadeToDpmsGracePeriod": 5,
   "launchPrefix": "",
   "brightnessDevicePins": {},
-  "wifiNetworkPins": {},
+  "wifiNetworkPins": {
+    "preferredWifi": [
+      "pocof6"
+    ]
+  },
   "bluetoothDevicePins": {},
   "audioInputDevicePins": {},
   "audioOutputDevicePins": {},
@@ -457,6 +461,13 @@
         {
           "id": "memUsage",
           "enabled": true,
+          "minimumWidth": true
+        },
+        {
+          "id": "gpuTemp",
+          "enabled": true,
+          "selectedGpuIndex": 0,
+          "pciId": "8086:b082",
           "minimumWidth": true
         },
         {

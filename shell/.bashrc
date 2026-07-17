@@ -18,6 +18,7 @@ alias ff='fastfetch'
 alias bs='source ~/.bashrc'
 alias history='bat ~/.bash_history | rg'
 alias copyPath='pwd | wl-copy'
+alias treeCopy='tree | wl-copy'
 alias battery='echo "$(cat /sys/class/power_supply/BAT1/capacity)% - $(cat /sys/class/power_supply/BAT1/status)"'
 
 # Aliases for mounting/unmounting

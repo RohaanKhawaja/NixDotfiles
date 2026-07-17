@@ -17,6 +17,7 @@
     pear-desktop              # Youtube Music Client
     vlc                       # Media Player
     mpv                       # Media Player
+    rhythmbox                 # Music Playeer
 
     # Terminal Emulator
     kitty
@@ -50,7 +51,7 @@
 
   # KDE Packages
   ] ++ (with pkgs.kdePackages; [
-    elisa                     # Music Player
+    # elisa                     # Music Player
     kate                      # Rich Text Editor
     dolphin                   # File Manager
     kdeconnect-kde            # Phone-PC Sync
