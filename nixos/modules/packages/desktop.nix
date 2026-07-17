@@ -24,6 +24,7 @@
 
     # Hardware
     polychromatic             # RGB Configuration
+    baobab                    # GUI System Storage Viewer
 
     # Office & Productivity
     libreoffice-qt            # Office Suite

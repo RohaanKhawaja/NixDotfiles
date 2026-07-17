@@ -22,6 +22,8 @@
     spice-gtk                 # SPICE protocol support
     virtio-win                # VirtIO drivers for Windows
     swtpm                     # TPM emulation
+
+    #bottles                   # Wine App Manager (better via flathub)
   ];
 
   # Enable network bridge for VMs

@@ -275,6 +275,7 @@ binds {
     Mod+D hotkey-overlay-title="Dashboard Toggle" { spawn "dms" "ipc" "call" "dash" "toggle" "''"; }
     Mod+ALT+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
     Mod+ALT+W hotkey-overlay-title="Toggle Bar" { spawn "dms" "ipc" "call" "bar" "toggle" "index" "0"; }
+    Mod+ALT+V hotkey-overlay-title="Toggle Bar" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
 }
 
 recent-windows {
