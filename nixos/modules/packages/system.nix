@@ -20,6 +20,7 @@
     ffmpeg                    # Video/Audio Processing
     cups-pk-helper            # Polkit helper
     openrazer-daemon          # Razer Peripheral helper
+    jmtpfs                    # MPT USB file transfer for Android phones
 
     # QT Framework
     libsForQt5.qt5ct          # QT5 Framework
