@@ -19,6 +19,7 @@
     cairo                     # 2D Graphics Library
     ffmpeg                    # Video/Audio Processing
     cups-pk-helper            # Polkit helper
+    openrazer-daemon          # Razer Peripheral helper
 
     # QT Framework
     libsForQt5.qt5ct          # QT5 Framework

@@ -7,11 +7,12 @@
     isNormalUser = true;
     description = "Rohaan Khawaja";
     shell = pkgs.bash;
-    extraGroups = [ 
+    extraGroups = [
       "networkmanager" # Network Management
       "wheel" 	       # Sudo Access
       "input" 	       # Raw input device access
       "plugdev"        # Peripheral device access
+      "openrazer"
     ];
   };
 

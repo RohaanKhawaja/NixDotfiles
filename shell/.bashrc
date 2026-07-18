@@ -21,6 +21,10 @@ alias copyPath='pwd | wl-copy'
 alias treeCopy='tree | wl-copy'
 alias battery='echo "$(cat /sys/class/power_supply/BAT1/capacity)% - $(cat /sys/class/power_supply/BAT1/status)"'
 
+# Task Warrior Aliases
+tl() { task list project:"$1"; }
+alias tla='task list'
+
 # Aliases for mounting/unmounting
 alias usbMount='sudo mount /dev/sda1 /mnt/usb && echo USB MOUNTED!'
 alias usbUnmount='sudo umount /dev/sda1 && echo USB UNMOUNTED!'
