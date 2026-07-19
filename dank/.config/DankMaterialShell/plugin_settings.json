@@ -24,5 +24,8 @@
       "sudo umount /dev/sda1",
       "usbUnmount"
     ]
+  },
+  "dankKDEConnect": {
+    "enabled": true
   }
 }

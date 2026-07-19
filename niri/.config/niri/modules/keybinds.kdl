@@ -229,8 +229,8 @@ binds {
     Mod+Shift+Equal { set-window-height "+10%"; }
 
     // Move the focused window between the floating and the tiling layout.
-    Mod+V       { toggle-window-floating; }
-    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    Mod+Z       { toggle-window-floating; }
+    Mod+CTRL+Z { switch-focus-between-floating-and-tiling; }
 
     // Toggle tabbed column display mode.
     // Windows in this column will appear as vertical tabs,
@@ -275,8 +275,8 @@ binds {
     Mod+A hotkey-overlay-title="Control Center Toggle" { spawn "dms" "ipc" "call" "control-center" "toggle"; }
     Mod+D hotkey-overlay-title="Dashboard Toggle" { spawn "dms" "ipc" "call" "dash" "toggle" "''"; }
     Mod+ALT+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
-    Mod+ALT+W hotkey-overlay-title="Toggle Bar" { spawn "dms" "ipc" "call" "bar" "toggle" "index" "0"; }
-    Mod+ALT+V hotkey-overlay-title="Toggle Bar" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
+    Mod+W hotkey-overlay-title="Toggle Bar" { spawn "dms" "ipc" "call" "bar" "toggleAutoHide" "index" "0"; }
+    Mod+V hotkey-overlay-title="Toggle Bar" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
 }
 
 recent-windows {
