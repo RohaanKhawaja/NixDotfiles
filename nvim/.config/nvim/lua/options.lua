@@ -46,6 +46,7 @@ local options = {
   matchtime = 3,           -- How long to show matching brackets
   cmdheight = 2,           -- Command line height
   showmode = false,        -- Don't show mode in command line
+  showcmd = true,          -- Show commands in the command line
   pumheight = 11,          -- Popup menu height
   pumblend = 11,           -- Popup menu transparency
   winblend = 1,            -- Floating window transparency

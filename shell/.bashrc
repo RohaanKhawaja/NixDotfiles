@@ -28,6 +28,8 @@ alias tla='task list'
 # Aliases for mounting/unmounting
 alias usbMount='sudo mount /dev/sda1 /mnt/usb && echo USB MOUNTED!'
 alias usbUnmount='sudo umount /dev/sda1 && echo USB UNMOUNTED!'
+alias androidMount='jmtpfs /mnt/phone'
+alias androidUnmount='sudo fusermount -uz /mnt/phone'
 
 # Nix Related Aliases
 alias nr='sudo nixos-rebuild switch'

@@ -15,17 +15,29 @@ window-rule {
 window-rule {
     match app-id="kitty"
     opacity 0.95
+    background-effect{
+      xray true
+      blur true
+    }
 }
 
 window-rule {
     match title="Settings"
     match app-id="org.quickshell"
     opacity 0.95
+    background-effect{
+      xray true
+      blur true
+    }
 }
 
 window-rule {
     match app-id="org.kde.dolphin"
     opacity 0.95
+    background-effect{
+      xray true
+      blur true
+    }
 }
 
 // Open the Firefox picture-in-picture player as floating by default.

@@ -3,6 +3,40 @@ require("lualine").setup({
   options = {
     theme = "dracula",
   },
+  sections = {
+    lualine_b = {
+      "branch",
+      "diff",
+      "diagnostics",
+      {
+        function()
+          local reg = vim.fn.reg_recording()
+          if reg ~= "" then
+            return "recording @" .. reg
+          end
+          return ""
+        end,
+        color = { fg = "#FF5555" },
+      },
+    },
+    lualine_x = {
+      "encoding",
+      "fileformat",
+      "filetype",
+    },
+    lualine_y = {
+      "progress",
+    },
+    lualine_z = {
+      "location",
+      -- Show pending keys/command count
+      {
+        function()
+          return vim.fn.reg_recording() ~= "" and vim.fn.reg_recording() or vim.v.count ~= 0 and vim.v.count or ""
+        end,
+      },
+    },
+  },
 })
 
 -- Indentation guides

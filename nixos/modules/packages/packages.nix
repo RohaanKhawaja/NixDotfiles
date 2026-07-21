@@ -17,6 +17,7 @@
       ./gaming.nix            # Steam, Launchers & Emulators
       ./fonts.nix             # Font Packages
       ./desktop.nix           # Universal Desktop Applications
+      # ./ai.nix                # AI/ML programs
     ];
 
 }
