@@ -49,7 +49,9 @@
     # This is for plugins that will load at startup without using packadd:
     startupPlugins = {
       general = with pkgs.vimPlugins; [
-        dracula-nvim          # Theme
+
+        # Theme
+        dracula-nvim
 
         # UI
         lualine-nvim
@@ -61,6 +63,7 @@
         nui-nvim
         nvim-tree-lua
         nvim-colorizer-lua
+        kdl-vim
 
         # Editor
         telescope-nvim

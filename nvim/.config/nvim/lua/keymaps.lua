@@ -1,5 +1,4 @@
 -- Rohaan's NixOS Nvim Config - keymaps
-
 local map = function(modes, lhs, rhs, opts)
   opts = opts or {}
   opts.noremap = true
@@ -11,69 +10,68 @@ vim.g.mapleader = ' '
 
 local keymaps = {
   -- Clear search highlight
-  { 'n', '<Esc>',    ':nohlsearch<CR>' },
+  { 'n', '<Esc>',     ':nohlsearch<CR>',           { desc = "Clear search highlight" } },
 
   -- Keep cursor centred when scrolling
-  { 'n', '<C-d>',    '<C-d>zz' },
-  { 'n', '<C-u>',    '<C-u>zz' },
+  { 'n', '<C-d>',     '<C-d>zz',                   { desc = "Scroll down (centred)" } },
+  { 'n', '<C-u>',     '<C-u>zz',                   { desc = "Scroll up (centred)" } },
 
   -- Keep cursor centred when jumping between search results
-  { 'n', 'n',        'nzzzv' },
-  { 'n', 'N',        'Nzzzv' },
+  { 'n', 'n',         'nzzzv',                     { desc = "Next search result (centred)" } },
+  { 'n', 'N',         'Nzzzv',                     { desc = "Prev search result (centred)" } },
 
   -- Better window navigation
-  { 'n', '<C-h>',    '<C-w>h' },
-  { 'n', '<C-j>',    '<C-w>j' },
-  { 'n', '<C-k>',    '<C-w>k' },
-  { 'n', '<C-l>',    '<C-w>l' },
+  { 'n', '<C-h>',     '<C-w>h',                    { desc = "Move to left window" } },
+  { 'n', '<C-j>',     '<C-w>j',                    { desc = "Move to window below" } },
+  { 'n', '<C-k>',     '<C-w>k',                    { desc = "Move to window above" } },
+  { 'n', '<C-l>',     '<C-w>l',                    { desc = "Move to right window" } },
 
   -- Better indenting in visual mode (stay in visual mode after indent)
-  { 'v', '<',        '<gv' },
-  { 'v', '>',        '>gv' },
+  { 'v', '<',         '<gv',                       { desc = "Indent left (stay in visual)" } },
+  { 'v', '>',         '>gv',                       { desc = "Indent right (stay in visual)" } },
 
   -- Move lines up/down in visual mode
-  { 'v', 'J',        ":m '>+1<CR>gv=gv" },
-  { 'v', 'K',        ":m '<-2<CR>gv=gv" },
+  { 'v', 'J',         ":m '>+1<CR>gv=gv",          { desc = "Move selection down" } },
+  { 'v', 'K',         ":m '<-2<CR>gv=gv",          { desc = "Move selection up" } },
 
   -- Delete without yanking by default
-  { 'n', 'd',        '"_d' },
-  { 'n', 'D',        '"_D' },
-  { 'x', 'd',        '"_d' },
+  { 'n', 'd',         '"_d',                       { desc = "Delete (no yank)" } },
+  { 'n', 'D',         '"_D',                       { desc = "Delete to EOL (no yank)" } },
+  { 'x', 'd',         '"_d',                       { desc = "Delete (no yank)" } },
 
   -- Change without yanking by default
-  { 'n', 'c',        '"_c' },
-  { 'n', 'C',        '"_C' },
-  { 'x', 'c',        '"_c' },
+  { 'n', 'c',         '"_c',                       { desc = "Change (no yank)" } },
+  { 'n', 'C',         '"_C',                       { desc = "Change to EOL (no yank)" } },
+  { 'x', 'c',         '"_c',                       { desc = "Change (no yank)" } },
 
   -- Leader + delete = normal delete (yanks)
-  { 'n', '<Leader>d', 'd' },
-  { 'n', '<Leader>D', 'D' },
-  { 'x', '<Leader>d', 'd' },
+  { 'n', '<Leader>d', 'd',                         { desc = "Delete (yank)" } },
+  { 'n', '<Leader>D', 'D',                         { desc = "Delete to EOL (yank)" } },
+  { 'x', '<Leader>d', 'd',                         { desc = "Delete (yank)" } },
 
   -- Leader + change = normal change (yanks)
-  { 'n', '<Leader>c', 'c' },
-  { 'n', '<Leader>C', 'C' },
-  { 'x', '<Leader>c', 'c' },
+  { 'n', '<Leader>c', 'c',                         { desc = "Change (yank)" } },
+  { 'n', '<Leader>C', 'C',                         { desc = "Change to EOL (yank)" } },
+  { 'x', '<Leader>c', 'c',                         { desc = "Change (yank)" } },
 
   -- Find and replace (current word under cursor)
-  { 'n', '<Leader>r', ':%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>' },
+  { 'n', '<Leader>r', ':%s/<C-r><C-w>/<C-r><C-w>/gI<Left><Left><Left>', { desc = "Find and replace word under cursor" } },
 
   -- Save file
-  { 'n', '<Leader>w', ':w<CR>' },
+  { 'n', '<Leader>w', ':w<CR>',                    { desc = "Save file" } },
 
   -- Quit / Force quit
-  { 'n', '<Leader>q', ':q<CR>' },
-  { 'n', '<Leader>Q', ':q!<CR>' },
+  { 'n', '<Leader>q', ':q<CR>',                    { desc = "Quit" } },
+  { 'n', '<Leader>Q', ':q!<CR>',                   { desc = "Force quit" } },
 
   -- File manager (netrw)
-  { 'n', '<Leader>e',  ':Ex<CR>' },   -- Open netrw in current window
-  { 'n', '<Leader>pv', ':Vex<CR>' },  -- Open netrw in vertical split
+  { 'n', '<Leader>e',  ':Ex<CR>',                  { desc = "Open netrw" } },
+  { 'n', '<Leader>pv', ':Vex<CR>',                 { desc = "Open netrw (vertical split)" } },
 }
 
 for _, k in ipairs(keymaps) do
-  map(k[1], k[2], k[3])
+  map(k[1], k[2], k[3], k[4])
 end
-
 
 local function resolve_cfile()
   local raw = vim.fn.expand("<cfile>")
@@ -115,5 +113,5 @@ local function tmux_open(args)
   end
 end
 
-vim.keymap.set("n", "gF", tmux_open({ "split-window", "-v" }))
-vim.keymap.set("n", "<Leader>gf", tmux_open({ "new-window" }))
+vim.keymap.set("n", "gF",          tmux_open({ "split-window", "-v" }), { desc = "Open file under cursor in tmux split" })
+vim.keymap.set("n", "<Leader>gn",  tmux_open({ "new-window" }),         { desc = "Open file under cursor in tmux window" })

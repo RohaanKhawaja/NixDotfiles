@@ -37,6 +37,7 @@ in
     nix-search-tv             # FZF For Nix Packages/Options
     zip                       # Zip file utility
     unzip                     # Zip file utility
+    yt-dlp                    # Youtube Video/audio downloader
 
     # CLI Apps
     btop                      # System Resource Monitor
@@ -49,6 +50,8 @@ in
     taskwarrior3              # Task Manager
     visidata                  # Spreadsheet editor
     khal                      # Calander
+    ytui-music                # Youtube Music TUI
+    youtube-tui               # Youtube TUI Client
 
     # Hardware/System Inspection
     lshw                      # Show Bus ID values

@@ -23,9 +23,18 @@ vim.api.nvim_create_autocmd("LspAttach", {
     vim.keymap.set('n', 'K',          vim.lsp.buf.hover,           vim.tbl_extend("force", opts, { desc = "Hover documentation" }))
     vim.keymap.set('n', '<Leader>rn', vim.lsp.buf.rename,          vim.tbl_extend("force", opts, { desc = "Rename symbol" }))
     vim.keymap.set('n', '<Leader>ca', vim.lsp.buf.code_action,     vim.tbl_extend("force", opts, { desc = "Code action" }))
-    vim.keymap.set('n', '<Leader>f',  vim.lsp.buf.format,          vim.tbl_extend("force", opts, { desc = "Format buffer" }))
-    vim.keymap.set('n', '[d',         vim.diagnostic.goto_prev,    vim.tbl_extend("force", opts, { desc = "Previous diagnostic" }))
-    vim.keymap.set('n', ']d',         vim.diagnostic.goto_next,    vim.tbl_extend("force", opts, { desc = "Next diagnostic" }))
+    vim.keymap.set('n', '<Leader>lf', vim.lsp.buf.format,          vim.tbl_extend("force", opts, { desc = "Format buffer" }))
+    vim.keymap.set('n', '[d', function() vim.diagnostic.jump({ count = -1 }) end, vim.tbl_extend("force", opts, { desc = "Previous diagnostic" }))
+    vim.keymap.set('n', ']d', function() vim.diagnostic.jump({ count =  1 }) end, vim.tbl_extend("force", opts, { desc = "Next diagnostic" }))
+
+   -- Copy diagnostic message under cursor
+    vim.keymap.set('n', '<Leader>cy', function()
+      local diag = vim.diagnostic.get(0, { lnum = vim.fn.line('.') - 1 })
+      if #diag > 0 then
+        vim.fn.setreg('+', diag[1].message)
+        vim.notify("Copied: " .. diag[1].message)
+      end
+    end, vim.tbl_extend("force", opts, { desc = "Copy diagnostic message" }))
   end,
 })
 

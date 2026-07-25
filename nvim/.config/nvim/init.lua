@@ -26,7 +26,6 @@ require("autocmds")
 --   "rcarriga/nvim-notify",
 --   "folke/noice.nvim",
 --   "MunifTanjim/nui.nvim",
-require("autocmds")
 --   "nvim-tree/nvim-tree.lua",       -- added
 --   "nvim-telescope/telescope.nvim",
 --   "nvim-lua/plenary.nvim",         -- added (explicit dep for telescope, gitsigns, etc.)
