@@ -185,7 +185,9 @@
   "sortAppsAlphabetically": false,
   "appLauncherGridColumns": 4,
   "spotlightCloseNiriOverview": true,
-  "spotlightSectionViewModes": {},
+  "spotlightSectionViewModes": {
+    "plugin_todoLauncher": "list"
+  },
   "appDrawerSectionViewModes": {},
   "niriOverviewOverlayEnabled": true,
   "dankLauncherV2Size": "compact",
@@ -236,18 +238,18 @@
   "soundNewNotification": true,
   "soundVolumeChanged": true,
   "soundPluggedIn": true,
-  "acMonitorTimeout": 0,
-  "acLockTimeout": 0,
-  "acSuspendTimeout": 0,
-  "acSuspendBehavior": 0,
-  "acProfileName": "",
-  "batteryMonitorTimeout": 0,
-  "batteryLockTimeout": 0,
-  "batterySuspendTimeout": 0,
-  "batterySuspendBehavior": 0,
-  "batteryProfileName": "",
+  "acMonitorTimeout": 900,
+  "acLockTimeout": 600,
+  "acSuspendTimeout": 7200,
+  "acSuspendBehavior": 2,
+  "acProfileName": "0",
+  "batteryMonitorTimeout": 900,
+  "batteryLockTimeout": 600,
+  "batterySuspendTimeout": 7200,
+  "batterySuspendBehavior": 2,
+  "batteryProfileName": "0",
   "batteryChargeLimit": 100,
-  "lockBeforeSuspend": false,
+  "lockBeforeSuspend": true,
   "loginctlLockIntegration": true,
   "fadeToLockEnabled": true,
   "fadeToLockGracePeriod": 5,
@@ -261,7 +263,12 @@
       "pocof6"
     ]
   },
-  "bluetoothDevicePins": {},
+  "bluetoothDevicePins": {
+    "preferredDevice": [
+      "40:ED:98:1B:41:B5",
+      "F9:08:65:2B:D8:41"
+    ]
+  },
   "audioInputDevicePins": {},
   "audioOutputDevicePins": {},
   "gtkThemingEnabled": false,
@@ -375,9 +382,10 @@
     "poweroff",
     "lock",
     "suspend",
-    "restart"
+    "restart",
+    "hibernate"
   ],
-  "powerMenuDefaultAction": "logout",
+  "powerMenuDefaultAction": "lock",
   "powerMenuGridLayout": false,
   "customPowerActionLock": "",
   "customPowerActionLogout": "",
@@ -599,7 +607,7 @@
   "desktopWidgetGroups": [],
   "builtInPluginSettings": {
     "dms_settings_search": {
-      "trigger": "?"
+      "trigger": "$"
     }
   },
   "clipboardEnterToPaste": false,

@@ -3,13 +3,8 @@
 { config, pkgs, ... }:
 
 {
-  # Enable Ollama service
-  services.llama-cpp = {
-    enable = true;
-  };
-
   environment.systemPackages = with pkgs; [
-    ollama                    # Ollama CLI
+    ollama-vulkan             # Ollama CLI - using vulkan backend for compatibility
     openvino                  # Open Source tookit for AI
   ];
 }

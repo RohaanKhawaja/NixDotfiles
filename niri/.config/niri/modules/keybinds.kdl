@@ -17,9 +17,9 @@ binds {
     Mod+RETURN hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+SHIFT+RETURN hotkey-overlay-title="Open TMUX" { spawn-sh "kitty --title tmux -e sh -c 'tmux has-session 2>/dev/null && tmux attach || tmux new-session'"; }
 
-    Mod+E hotkey-overlay-title="Open file explorer: dolphin" {spawn "dolphin"; }
-    Mod+ALT+F hotkey-overlay-title="Open browser: firefox" {spawn "firefox"; }
-    Mod+ALT+M hotkey-overlay-title="Open Music Player: rhythmbox" {spawn "rhythmbox"; }
+    Mod+E hotkey-overlay-title="Open file explorer: Nautilus" {spawn "nautilus"; }
+    Mod+ALT+F hotkey-overlay-title="Open browser: Firefox" {spawn "firefox"; }
+    Mod+ALT+M hotkey-overlay-title="Open Music Player: Rhythmbox" {spawn "rhythmbox"; }
     Mod+SHIFT+ALT+M hotkey-overlay-title="Open Youtube Music" {spawn "pear-desktop"; }
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.

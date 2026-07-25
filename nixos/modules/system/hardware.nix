@@ -3,14 +3,14 @@
 { config, pkgs, ... }:
 
 {
-  # Enable GPU Acceleration
+  # Enable GPU Acceleration (intel GPU)
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
     extraPackages  = with pkgs; [
-      intel-media-driver	# Intel hardware video decode
-      intel-compute-runtime	# OpenCL support for intel Arc
-      nvtopPackages.intel	# GPU Resource Monitor for Intel GPUs
+      intel-media-driver	              # Intel hardware video decode
+      intel-compute-runtime	            # OpenCL support for intel Arc
+      nvtopPackages.intel	              # GPU Resource Monitor for Intel GPUs
     ];
   };
 

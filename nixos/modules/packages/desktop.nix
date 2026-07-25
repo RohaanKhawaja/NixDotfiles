@@ -33,6 +33,7 @@
     xournalpp                 # Handwriting App
 
     # File Management/Downloads
+    nautilus                  # Graphical File Manager
     localsend                 # Wireless File Transmission
     syncthing                 # Wireless File Sync
     qbittorrent               # Torrenting Client
@@ -52,9 +53,7 @@
 
   # KDE Packages
   ] ++ (with pkgs.kdePackages; [
-    # elisa                     # Music Player
     kate                      # Rich Text Editor
-    dolphin                   # File Manager
     kdeconnect-kde            # Phone-PC Sync
     ark                       # File Archiver
     gwenview                  # Image Viewer

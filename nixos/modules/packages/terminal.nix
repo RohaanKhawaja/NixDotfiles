@@ -32,13 +32,15 @@ in
     fzf                       # Fuzzy Find
     tree                      # Tree Listing
     ripgrep                   # Better Grep
+    fd                        # Better Find
     bat                       # Better cat
     nix-search-tv             # FZF For Nix Packages/Options
     zip                       # Zip file utility
-    unzip                       # Zip file utility
+    unzip                     # Zip file utility
 
     # CLI Apps
     btop                      # System Resource Monitor
+    nvtopPackages.intel       # Intel GPU resource monitor
     discordo                  # Client for Discord
     #tdf                      # PDF Viewer (current version broken in tmux)
     img-cat                   # Image Viewer

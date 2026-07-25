@@ -3,7 +3,8 @@
     "enabled": false
   },
   "powerOptions": {
-    "enabled": true
+    "enabled": true,
+    "trigger": "!"
   },
   "mpvpaperWallpaper": {
     "enabled": true,
@@ -18,6 +19,7 @@
   "commandRunner": {
     "enabled": true,
     "history": [
+      "xev",
       "sudo mount /dev/sda1 /mnt/usb",
       "usbMount",
       "vek",
@@ -27,5 +29,15 @@
   },
   "dankKDEConnect": {
     "enabled": true
+  },
+  "todoLauncher": {
+    "enabled": true,
+    "trigger": ":",
+    "tasksData": "[{\"id\":\"1784763911979\",\"text\":\"Look through dms plugins\",\"done\":false,\"completionDate\":null}]"
+  },
+  "fdSearch": {
+    "enabled": true,
+    "trigger": "?",
+    "directories": "~"
   }
 }
