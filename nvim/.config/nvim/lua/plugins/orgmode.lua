@@ -42,6 +42,38 @@ require("org-notebook").setup({
   notebook_dir = "~/org/notes",
 })
 
+-- Pandoc export keymaps (org files only)
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "org",
+  callback = function()
+    -- Export to HTML and open in browser
+    vim.keymap.set("n", "<Leader>eh", function()
+      local file = vim.fn.expand("%:p")
+      local out = vim.fn.expand("%:p:r") .. ".html"
+      vim.fn.system("pandoc " .. vim.fn.shellescape(file) .. " -o " .. vim.fn.shellescape(out))
+      vim.fn.system("xdg-open " .. vim.fn.shellescape(out))
+      vim.notify("Exported to " .. out)
+    end, { desc = "Org: export to HTML" })
+
+    -- Export to PDF
+    vim.keymap.set("n", "<Leader>ep", function()
+      local file = vim.fn.expand("%:p")
+      local out = vim.fn.expand("%:p:r") .. ".pdf"
+      vim.fn.system("pandoc " .. vim.fn.shellescape(file) .. " -o " .. vim.fn.shellescape(out))
+      vim.fn.system("xdg-open " .. vim.fn.shellescape(out))
+      vim.notify("Exported to " .. out)
+    end, { desc = "Org: export to PDF" })
+
+    -- Export to Markdown
+    vim.keymap.set("n", "<Leader>em", function()
+      local file = vim.fn.expand("%:p")
+      local out = vim.fn.expand("%:p:r") .. ".md"
+      vim.fn.system("pandoc " .. vim.fn.shellescape(file) .. " -o " .. vim.fn.shellescape(out))
+      vim.notify("Exported to " .. out)
+    end, { desc = "Org: export to Markdown" })
+  end,
+})
+
 -- -- Org roam UI (not ready yet)
 -- require("org-roam-ui").setup({
 --   port = 8080,         -- local server port

@@ -28,6 +28,8 @@
 
     # Office & Productivity
     libreoffice-qt            # Office Suite
+    hunspell                  # Spell Check
+    hunspellDicts.en_GB-ise   # British English Spellcheck dictionary
     speedcrunch               # Calculator
     zed-editor                # Code Editor
     xournalpp                 # Handwriting App

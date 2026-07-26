@@ -6,7 +6,6 @@
 let
   myNeovim = import "/etc/nixos/modules/packages/nixcats.nix" {
     inherit pkgs;
-    #luaPath = /home/rohaan/.config/nvim;
     luaPath = /. + "${config.myConfig.homeDir}/.config/nvim";
   };
 
@@ -22,6 +21,7 @@ in
   environment.systemPackages = with pkgs; [
     # Dev
     myNeovim                  # Text Editor
+    pandoc                    # Tool for exporting files from Neovim
     tmux                      # Terminal Multiplexer
     stow                      # Dotfiles Management
     git                       # Git
@@ -47,7 +47,6 @@ in
     img-cat                   # Image Viewer
     yazi                      # File Manager
     cmus                      # Music Player
-    taskwarrior3              # Task Manager
     visidata                  # Spreadsheet editor
     khal                      # Calander
     ytui-music                # Youtube Music TUI

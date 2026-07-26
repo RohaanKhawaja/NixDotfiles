@@ -11,6 +11,8 @@
 
   imports =
     [
+      ./defaults.nix          # Default apps
+
       ./terminal.nix          # Terminal Apps/Tools
       ./dev.nix               # Compilers & Debuggers
       ./system.nix            # Daemons & Utilities
@@ -21,5 +23,3 @@
     ];
 
 }
-
-
