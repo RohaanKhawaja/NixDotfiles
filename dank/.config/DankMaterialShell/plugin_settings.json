@@ -39,5 +39,10 @@
     "enabled": true,
     "trigger": "?",
     "directories": "~"
+  },
+  "niriWindows": {
+    "enabled": true,
+    "noTrigger": false,
+    "trigger": "@"
   }
 }

@@ -18,20 +18,30 @@ require("autocmds")
 --
 -- -- Plugin Installation
 -- require("lazy").setup({
+--   -- Theme
 --   "dracula/vim",
+--
+--   -- UI
 --   "nvim-lualine/lualine.nvim",
---   "nvim-tree/nvim-web-devicons",   -- added (required by lualine, nvim-tree, etc.)
+--   "nvim-tree/nvim-web-devicons",
 --   "lukas-reineke/indent-blankline.nvim",
 --   "folke/which-key.nvim",
 --   "rcarriga/nvim-notify",
 --   "folke/noice.nvim",
 --   "MunifTanjim/nui.nvim",
---   "nvim-tree/nvim-tree.lua",       -- added
+--   "nvim-tree/nvim-tree.lua",
+--   "norcalli/nvim-colorizer.lua",
+--
+--   -- Editor
 --   "nvim-telescope/telescope.nvim",
---   "nvim-lua/plenary.nvim",         -- added (explicit dep for telescope, gitsigns, etc.)
+--   "nvim-lua/plenary.nvim",
 --   "lewis6991/gitsigns.nvim",
 --   "nvim-treesitter/nvim-treesitter",
+--
+--   -- LSP
 --   "neovim/nvim-lspconfig",
+--
+--   -- Completion
 --   "hrsh7th/nvim-cmp",
 --   "hrsh7th/cmp-nvim-lsp",
 --   "hrsh7th/cmp-buffer",
@@ -39,7 +49,25 @@ require("autocmds")
 --   "L3MON4D3/LuaSnip",
 --   "saadparwaiz1/cmp_luasnip",
 --   "windwp/nvim-autopairs",
+--
+--   -- LaTeX
 --   "lervag/vimtex",
+--
+--   -- KDL
+--   "imsnif/kdl.vim",
+--
+--   -- Orgmode
+--   "nvim-orgmode/orgmode",
+--   "nvim-orgmode/org-bullets.nvim",
+--   "danilshvalov/org-modern.nvim",
+--   "nvim-orgmode/telescope-orgmode.nvim",
+--   "hamidi-dev/org-super-agenda.nvim",
+--   "aaratha/org-cycle-lite.nvim",
+--   "michaelb/sniprun",
+--   "lukas-reineke/headlines.nvim",
+--   "chipsenkbeil/org-roam.nvim",
+--   "bitbloxhub/org-notebook.nvim",
+--   "CaryWill/org-roam-ui.nvim",
 -- }, { lazy = false })
 
 require("plugins.theme")
@@ -52,3 +80,4 @@ require("plugins.snippets")
 require("plugins.latex")
 require("plugins.filetree")
 require("plugins.colouriser")
+require("plugins.orgmode")

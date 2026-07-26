@@ -265,7 +265,7 @@ binds {
 
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
-    Mod+Alt+P { power-off-monitors; }
+    Mod+Alt+W { power-off-monitors; }
 
     // DMS Keybinds
     Mod+SPACE hotkey-overlay-title="Settings Toggle" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }

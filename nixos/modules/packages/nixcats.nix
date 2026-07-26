@@ -85,6 +85,79 @@
 
         # LaTeX
         vimtex
+
+        # Orgmode
+        orgmode
+        headlines-nvim
+        org-notebook-nvim
+        org-roam-nvim
+        sniprun
+
+        # Not in nixpkgs
+        (pkgs.vimUtils.buildVimPlugin {
+          name = "org-bullets-nvim";
+          src = pkgs.fetchFromGitHub {
+            owner = "nvim-orgmode";
+            repo = "org-bullets.nvim";
+            rev = "main";
+            sha256 = "sha256-Tgeqr/Zd1hJXXaln4XWGS5aZqypnpfNxgO/+pQVk7jg=";
+          };
+        })
+
+        (pkgs.vimUtils.buildVimPlugin {
+          name = "org-modern-nvim";
+          src = pkgs.fetchFromGitHub {
+            owner = "danilshvalov";
+            repo = "org-modern.nvim";
+            rev = "main";
+            sha256 = "sha256-TYs3g5CZDVXCFXuYaj3IriJ4qlIOxQgArVOzT7pqkqs=";
+          };
+        })
+
+        (pkgs.vimUtils.buildVimPlugin {
+          name = "telescope-orgmode-nvim";
+          src = pkgs.fetchFromGitHub {
+            owner = "nvim-orgmode";
+            repo = "telescope-orgmode.nvim";
+            rev = "main";
+            sha256 = "sha256-6Eb0dabJ7W+bxypSgmgLVEhkRnXx4Y2RAaFxcC4CBbc=";
+          };
+          doCheck = false;
+        })
+
+        (pkgs.vimUtils.buildVimPlugin {
+          name = "org-super-agenda-nvim";
+          src = pkgs.fetchFromGitHub {
+            owner = "hamidi-dev";
+            repo = "org-super-agenda.nvim";
+            rev = "main";
+            sha256 = "sha256-4O7wyPoYFtGLi/TYy9U6kildyr+RCpUsqb0vr4Aovw4=";
+          };
+        })
+
+        (pkgs.vimUtils.buildVimPlugin {
+          name = "org-cycle-lite-nvim";
+          src = pkgs.fetchFromGitHub {
+            owner = "aaratha";
+            repo = "org-cycle-lite.nvim";
+            rev = "main";
+            sha256 = "sha256-iehY/OT08NKIuajOyoU9CPq+U1lONmgDdyfc7jBZIDU=";
+          };
+          doCheck = false;
+        })
+
+        # UI for seeing knowledge map (not ready yet)
+        # (pkgs.vimUtils.buildVimPlugin {
+        #   name = "org-roam-ui-nvim";
+        #   src = pkgs.fetchFromGitHub {
+        #     owner = "CaryWill";
+        #     repo = "org-roam-ui.nvim";
+        #     rev = "main";
+        #     sha256 = "fakeHash";
+        #   };
+        #   doCheck = false;
+        # })
+
       ];
     };
 

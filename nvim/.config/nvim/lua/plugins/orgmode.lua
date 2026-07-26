@@ -1,0 +1,51 @@
+local Menu = require("org-modern.menu")
+
+-- Core orgmode
+require("orgmode").setup({
+  org_agenda_files = { "~/org/**/*" },
+  org_default_notes_file = "~/org/inbox.org",
+  ui = {
+    menu = {
+      handler = function(data)
+        Menu:new():open(data)
+      end,
+    },
+  },
+})
+
+-- Aesthetics
+require("org-bullets").setup()
+require("headlines").setup()
+
+-- Telescope integration
+local telescope = require("telescope")
+telescope.load_extension("orgmode")
+vim.keymap.set("n", "<Leader>of", telescope.extensions.orgmode.search_headings, { desc = "Org: search headings" })
+vim.keymap.set("n", "<Leader>or", telescope.extensions.orgmode.refile_heading,  { desc = "Org: refile heading" })
+
+-- Super agenda
+require("org-super-agenda").setup()
+
+-- Cycle lite
+require("org-cycle-lite").setup()
+
+-- Sniprun
+require("sniprun").setup()
+
+-- Org roam
+require("org-roam").setup({
+  directory = "~/org/roam",
+})
+
+-- Org notebook
+require("org-notebook").setup({
+  notebook_dir = "~/org/notes",
+})
+
+-- -- Org roam UI (not ready yet)
+-- require("org-roam-ui").setup({
+--   port = 8080,         -- local server port
+--   open_on_start = true -- auto open in browser when launched
+-- })
+--
+-- vim.keymap.set("n", "<Leader>ou", ":OrgRoamUI<CR>", { desc = "Org: open roam UI" })
