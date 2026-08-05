@@ -146,7 +146,7 @@ layout {
 
     tab-indicator{
       on
-      width 1
+      width 2
       gap 1
       place-within-column
       //hide-when-single-tab

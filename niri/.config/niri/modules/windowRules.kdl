@@ -1,42 +1,18 @@
-// Window rules let you adjust behavior for individual windows.
-// Find more information on the wiki:
-// https://niri-wm.github.io/niri/Configuration:-Window-Rules
 
-// Work around WezTerm's initial configure bug
-// by setting an empty default-column-width.
-window-rule {
-    // This regular expression is intentionally made as specific as possible,
-    // since this is the default config, and we want no false positives.
-    // You can get away with just app-id="wezterm" if you want.
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
-}
-
+// Blur/transparency block for multiple apps
 window-rule {
     match app-id="kitty"
-    opacity 0.95
-    background-effect{
-      xray true
-      blur true
-    }
-}
-
-window-rule {
-    match title="Settings"
     match app-id="org.quickshell"
-    opacity 0.95
-    background-effect{
-      xray true
-      blur true
-    }
-}
+    match app-id="org.gnome.Nautilus"
+    match app-id="com.github.th_ch.youtube_music"
+    match app-id="vesktop"
+    match app-id="org.gnome.Rhythmbox3"
+    match title="Settings"
 
-window-rule {
-    match app-id="org.kde.dolphin"
-    opacity 0.95
-    background-effect{
-      xray true
-      blur true
+    opacity 0.93
+    background-effect {
+        xray true
+        blur true
     }
 }
 
@@ -68,9 +44,5 @@ window-rule {
     clip-to-geometry true
 }
 
-// Uncomment this line to ask the clients to omit their client-side decorations if possible.
-// If the client will specifically ask for CSD, the request will be honored.
-// Additionally, clients will be informed that they are tiled, removing some client-side rounded corners.
-// This option will also fix border/focus ring drawing behind some semitransparent windows.
-// After enabling or disabling this, you need to restart the apps for this to take effect.
+// Remove client-side decoration
 prefer-no-csd

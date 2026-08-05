@@ -58,3 +58,15 @@ vim.api.nvim_create_autocmd("VimResized", {
     vim.cmd("tabdo wincmd =")
   end,
 })
+
+-- Don't autoindent for org files
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "org",
+  callback = function()
+    vim.opt_local.autoindent  = false
+    vim.opt_local.smartindent = false
+    vim.opt_local.cindent     = false
+    vim.opt_local.indentexpr  = ""
+    vim.bo.indentexpr         = ""
+  end,
+})

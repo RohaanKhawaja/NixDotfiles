@@ -2,8 +2,8 @@ local Menu = require("org-modern.menu")
 
 -- Core orgmode
 require("orgmode").setup({
-  org_agenda_files = { "~/org/**/*" },
-  org_default_notes_file = "~/org/inbox.org",
+  org_agenda_files = { "~/Documents/org/**/*" },
+  org_default_notes_file = "~/Documents/org/inbox.org",
   ui = {
     menu = {
       handler = function(data)
@@ -34,12 +34,12 @@ require("sniprun").setup()
 
 -- Org roam
 require("org-roam").setup({
-  directory = "~/org/roam",
+  directory = "~/Documents/org/roam",
 })
 
 -- Org notebook
 require("org-notebook").setup({
-  notebook_dir = "~/org/notes",
+  notebook_dir = "~/Documents/org/notes",
 })
 
 -- Pandoc export keymaps (org files only)

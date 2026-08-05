@@ -14,6 +14,9 @@
     AttrEventCode=-ABS_MT_PRESSURE;-ABS_PRESSURE;-ABS_MT_DISTANCE;-ABS_MT_TOUCH_MAJOR;-ABS_MT_TOUCH_MINOR
   '';
 
+  # Enable Linux Firmware Update Manager
+  services.fwupd.enable = true;
+
   # Palm rejection solution
   services.libinput = {
     enable = true;

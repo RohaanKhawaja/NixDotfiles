@@ -19,6 +19,10 @@
   "commandRunner": {
     "enabled": true,
     "history": [
+      "pkill kdeconnect",
+      "speedcrunch",
+      "btop",
+      "syncthing",
       "xev",
       "sudo mount /dev/sda1 /mnt/usb",
       "usbMount",
@@ -44,5 +48,20 @@
     "enabled": true,
     "noTrigger": false,
     "trigger": "@"
+  },
+  "calculator": {
+    "enabled": true,
+    "trigger": "=",
+    "calcEngine": "default"
+  },
+  "volumeMixer": {
+    "enabled": true,
+    "pillIcon": "volume",
+    "pillDisplay": "both"
+  },
+  "timeManager": {
+    "enabled": true,
+    "displayMode": "progress",
+    "lastMode": "timer"
   }
 }

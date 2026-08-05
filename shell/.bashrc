@@ -21,10 +21,6 @@ alias copyPath='pwd | wl-copy'
 alias treeCopy='tree | wl-copy'
 alias battery='echo "$(cat /sys/class/power_supply/BAT1/capacity)% - $(cat /sys/class/power_supply/BAT1/status)"'
 
-# Task Warrior Aliases
-tl() { task list project:"$1"; }
-alias tla='task list'
-
 # Aliases for mounting/unmounting
 alias usbMount='sudo mount /dev/sda1 /mnt/usb && echo USB MOUNTED!'
 alias usbUnmount='sudo umount /dev/sda1 && echo USB UNMOUNTED!'
@@ -64,11 +60,12 @@ function vg() {
 }
 
 # Org quick access
-alias oi="nvim ~/org/inbox.org"
-alias ot="nvim ~/org/tasks.org"
-alias oj="nvim ~/org/journal.org"
-alias on="nvim ~/org/notes/"
-alias org="nvim ~/org/"
+alias oi="nvim ~/Documents/org/inbox.org"
+alias ot="nvim ~/Documents/org/tasks.org"
+alias oj="nvim ~/Documents/org/journal.org"
+alias on="nvim ~/Documents/org/notes/"
+alias org="nvim ~/Documents/org/"
+alias todo='bat ~/Documents/org/tasks.org'
 
 # FZF Colour Scheme
 export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'

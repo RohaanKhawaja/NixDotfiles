@@ -1,0 +1,10 @@
+// Rohaan's Niri Config - Master kdl file
+
+// Imports
+include "modules/keybinds.kdl"
+include "modules/input.kdl"
+include "modules/layout.kdl"
+include "modules/monitors.kdl"
+include "modules/autostart.kdl"
+include "modules/windowRules.kdl"
+include "modules/misc.kdl"

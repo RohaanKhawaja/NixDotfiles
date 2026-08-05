@@ -14,6 +14,10 @@
     ];
   };
 
+  # Enable thunderbolt
+  services.hardware.bolt.enable = true;
+  boot.kernelParams = [ "ucsi_acpi.disable_runtime_pm=1" ];
+
   # Enable Bluetooth
   hardware.bluetooth = {
     enable = true;

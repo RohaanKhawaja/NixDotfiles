@@ -53,6 +53,9 @@ binds {
     // or do a four-finger swipe up on a touchpad.
     Mod+Tab repeat=false { toggle-overview; }
 
+    Mod+CTRL+SHIFT+Tab { focus-workspace-up; }
+    Mod+CTRL+Tab { focus-workspace-down; }
+
     Mod+Q repeat=false { close-window; }
 
     // Changing Focus
@@ -111,6 +114,8 @@ binds {
     Mod+Shift+Page_Up   { move-workspace-up; }
     Mod+Shift+U         { move-workspace-down; }
     Mod+Shift+I         { move-workspace-up; }
+    Mod+U               { focus-workspace-down; }
+    Mod+I               { focus-workspace-up; }
 
     // You can bind mouse wheel scroll ticks using the following syntax.
     // These binds will change direction based on the natural-scroll setting.
@@ -118,22 +123,22 @@ binds {
     // To avoid scrolling through workspaces really fast, you can use
     // the cooldown-ms property. The bind will be rate-limited to this value.
     // You can set a cooldown on any bind, but it's most useful for the wheel.
-    Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
-    Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
-    Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
-    Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
+    Mod+WheelScrollDown       cooldown-ms=150 { focus-window-or-workspace-down; }
+    Mod+WheelScrollUp         cooldown-ms=150 { focus-window-or-workspace-up; }
+    Mod+SHIFT+WheelScrollDown cooldown-ms=150 { move-window-down-or-to-workspace-down; }
+    Mod+SHIFT+WheelScrollUp   cooldown-ms=150 { move-window-up-or-to-workspace-up; }
 
-    Mod+WheelScrollRight      { focus-column-right; }
-    Mod+WheelScrollLeft       { focus-column-left; }
-    Mod+Ctrl+WheelScrollRight { move-column-right; }
-    Mod+Ctrl+WheelScrollLeft  { move-column-left; }
+    Mod+WheelScrollRight       cooldown-ms=150 { focus-column-right; }
+    Mod+WheelScrollLeft        cooldown-ms=150 { focus-column-left; }
+    Mod+SHIFT+WheelScrollRight cooldown-ms=150 { move-column-right; }
+    Mod+SHIFT+WheelScrollLeft  cooldown-ms=150 { move-column-left; }
 
     // Usually scrolling up and down with Shift in applications results in
     // horizontal scrolling; these binds replicate that.
-    Mod+Shift+WheelScrollDown      { focus-column-right; }
-    Mod+Shift+WheelScrollUp        { focus-column-left; }
-    Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
-    Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
+    Mod+CTRL+WheelScrollDown       cooldown-ms=150 { focus-column-right; }
+    Mod+CTRL+WheelScrollUp         cooldown-ms=150 { focus-column-left; }
+    Mod+Ctrl+Shift+WheelScrollDown cooldown-ms=150 { move-column-right; }
+    Mod+Ctrl+Shift+WheelScrollUp   cooldown-ms=150 { move-column-left; }
 
     // Similarly, you can bind touchpad scroll "ticks".
     // Touchpad scrolling is continuous, so for these binds it is split into
@@ -269,15 +274,20 @@ binds {
     Mod+Alt+W { power-off-monitors; }
 
     // DMS Keybinds
-    Mod+SPACE hotkey-overlay-title="Settings Toggle" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
-    Mod+N hotkey-overlay-title="Notepad: Toggle" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
-    ALT+F4 hotkey-overlay-title="Power Menu Toggle" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
-    Mod+I hotkey-overlay-title="Settings Toggle" { spawn "dms" "ipc" "call" "settings" "toggle"; }
-    Mod+A hotkey-overlay-title="Control Center Toggle" { spawn "dms" "ipc" "call" "control-center" "toggle"; }
-    Mod+D hotkey-overlay-title="Dashboard Toggle" { spawn "dms" "ipc" "call" "dash" "toggle" "''"; }
+    Mod+SPACE hotkey-overlay-title="Toggle Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+    Mod+N hotkey-overlay-title="Toggle Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
+    Mod+CTRL+N hotkey-overlay-title="Toggle Notifications" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
+    ALT+F4 hotkey-overlay-title="Toggle Power Menu" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
+    Mod+O hotkey-overlay-title="Toggle Settings" { spawn "dms" "ipc" "call" "settings" "toggle"; }
+    Mod+A hotkey-overlay-title="Toggle Control Center" { spawn "dms" "ipc" "call" "control-center" "toggle"; }
+    Mod+D hotkey-overlay-title="Toggle Dashboard Overview" { spawn "dms" "ipc" "call" "dash" "toggle" "''"; }
+    Mod+CTRL+D hotkey-overlay-title="Toggle Dashboard Weather" { spawn "dms" "ipc" "call" "dash" "toggle" "weather"; }
+    Mod+SHIFT+D hotkey-overlay-title="Toggle Dashboard Music" { spawn "dms" "ipc" "call" "dash" "toggle" "media"; }
     Mod+ALT+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
     Mod+W hotkey-overlay-title="Toggle Bar" { spawn "dms" "ipc" "call" "bar" "toggleAutoHide" "index" "0"; }
-    Mod+V hotkey-overlay-title="Toggle Bar" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
+    Mod+V hotkey-overlay-title="Toggle Clipboard History" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
+    Mod+CTRL+V hotkey-overlay-title="Toggle Volume Mixer" { spawn "dms" "ipc" "call" "widget" "toggle" "volumeMixer"; }
+    Mod+SHIFT+C hotkey-overlay-title="Toggle Colour Picker" { spawn "dms" "ipc" "call" "color-picker" "toggle"; }
 }
 
 recent-windows {
