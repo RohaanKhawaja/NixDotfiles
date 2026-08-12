@@ -8,7 +8,3 @@ include "modules/monitors.kdl"
 include "modules/autostart.kdl"
 include "modules/windowRules.kdl"
 include "modules/misc.kdl"
-
-include "dms/outputs.kdl"
-
-include "dms-theme-sync.kdl"

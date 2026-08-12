@@ -34,6 +34,7 @@ alias nu='sudo nix-channel --update'
 alias ns="nix-search-tv print | fzf --preview 'nix-search-tv preview {}' --scheme history"
 alias ni='nix-shell -p'
 alias ng='sudo nix-env --list-generations --profile /nix/var/nix/profiles/system'
+alias nc='sudo nix-collect-garbage'
 
 # Git Related Aliases
 alias gs='git status'

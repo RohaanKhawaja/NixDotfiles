@@ -35,9 +35,11 @@ in
     fd                        # Better Find
     bat                       # Better cat
     nix-search-tv             # FZF For Nix Packages/Options
+    nix-tree                  # Interact with the Nix store
     zip                       # Zip file utility
     unzip                     # Zip file utility
     yt-dlp                    # Youtube Video/audio downloader
+    scrcpy                    # Screen mirroring tool over USB for Android
 
     # CLI Apps
     btop                      # System Resource Monitor

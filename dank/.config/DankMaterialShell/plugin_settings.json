@@ -19,6 +19,10 @@
   "commandRunner": {
     "enabled": true,
     "history": [
+      "pkill discord",
+      "pkill vesktop",
+      "usbUnmount",
+      "pkill qbittorrent",
       "pkill kdeconnect",
       "speedcrunch",
       "btop",
@@ -27,12 +31,12 @@
       "sudo mount /dev/sda1 /mnt/usb",
       "usbMount",
       "vek",
-      "sudo umount /dev/sda1",
-      "usbUnmount"
+      "sudo umount /dev/sda1"
     ]
   },
   "dankKDEConnect": {
-    "enabled": true
+    "enabled": true,
+    "selectedDeviceId": "a4e8250f4e63497097e7e455271a1b84"
   },
   "todoLauncher": {
     "enabled": true,
@@ -63,5 +67,39 @@
     "enabled": true,
     "displayMode": "progress",
     "lastMode": "timer"
+  },
+  "webSearch": {
+    "enabled": true,
+    "searchEngines": [],
+    "disabledEngines": [
+      "duckduckgo",
+      "brave",
+      "bing",
+      "kagi",
+      "twitter",
+      "aur",
+      "archlinux"
+    ],
+    "trigger": "#"
+  },
+  "bongoCat": {
+    "enabled": true,
+    "catColorMode": "primary",
+    "catSizePercent": 83,
+    "enableBlinking": true,
+    "soundEnabled": false,
+    "showMetrics": true,
+    "soundProfile": "bongo",
+    "mouseEnabled": true,
+    "metricsInBar": true
+  },
+  "emojiLauncher": {
+    "enabled": true,
+    "trigger": ".",
+    "pasteOnSelect": true,
+    "recentEmojis": "£"
+  },
+  "dmsThemeSync": {
+    "enabled": true
   }
 }

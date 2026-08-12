@@ -30,8 +30,8 @@ binds {
     // The allow-when-locked=true property makes them work even when the session is locked.
     // Using spawn-sh allows to pass multiple arguments together with the command.
     // "-l 1.0" limits the volume to 100%.
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+ -l 1.0"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-"; }
     XF86AudioMute        allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
 
@@ -275,6 +275,10 @@ binds {
 
     // DMS Keybinds
     Mod+SPACE hotkey-overlay-title="Toggle Launcher" { spawn "dms" "ipc" "call" "spotlight" "toggle"; }
+    Mod+SHIFT+SPACE { spawn "dms" "ipc" "call" "spotlight-bar" "toggleQuery" "@"; }     //App Switcher
+    Mod+CTRL+SPACE { spawn "dms" "ipc" "call" "spotlight-bar" "toggleQuery" "?"; }      // File Searcher
+    Mod+SHIFT+Period { spawn "dms" "ipc" "call" "spotlight-bar" "toggleQuery" "."; }    // Emoji Picker
+
     Mod+N hotkey-overlay-title="Toggle Notepad" { spawn "dms" "ipc" "call" "notepad" "toggle"; }
     Mod+CTRL+N hotkey-overlay-title="Toggle Notifications" { spawn "dms" "ipc" "call" "notifications" "toggle"; }
     ALT+F4 hotkey-overlay-title="Toggle Power Menu" { spawn "dms" "ipc" "call" "powermenu" "toggle"; }
@@ -287,7 +291,11 @@ binds {
     Mod+W hotkey-overlay-title="Toggle Bar" { spawn "dms" "ipc" "call" "bar" "toggleAutoHide" "index" "0"; }
     Mod+V hotkey-overlay-title="Toggle Clipboard History" { spawn "dms" "ipc" "call" "clipboard" "toggle"; }
     Mod+CTRL+V hotkey-overlay-title="Toggle Volume Mixer" { spawn "dms" "ipc" "call" "widget" "toggle" "volumeMixer"; }
+    Mod+B hotkey-overlay-title="Toggle Battery Widgeta" { spawn "dms" "ipc" "call" "widget" "toggle" "battery"; }
     Mod+SHIFT+C hotkey-overlay-title="Toggle Colour Picker" { spawn "dms" "ipc" "call" "color-picker" "toggle"; }
+    Mod+ALT+C hotkey-overlay-title="Toggle CPU Usage Stats" { spawn "dms" "ipc" "call" "widget" "toggle" "cpuUsage"; }
+    Mod+ALT+SHIFT+C hotkey-overlay-title="Toggle Memory Usage Stats" { spawn "dms" "ipc" "call" "widget" "toggle" "memUsage"; }
+    Mod+ALT+P hotkey-overlay-title="Toggle KDE Connect" { spawn "dms" "ipc" "call" "widget" "toggle" "dankKDEConnect"; }
 }
 
 recent-windows {

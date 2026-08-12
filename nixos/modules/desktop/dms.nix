@@ -2,10 +2,17 @@
 
 { config, pkgs, ...}:
 
+let
+  unstable = import (builtins.fetchTarball {
+    url = "https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz";
+  }) { config = config.nixpkgs.config; };
+in
+
 {
   # Enable DMS and modules
   programs.dms-shell = {
     enable = true;
+    package = unstable.dms-shell;
 
     systemd = {
       enable = true;

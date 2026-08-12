@@ -11,10 +11,10 @@
     pcsx2                     # PS2
     dolphin-emu               # GameCube/Wii
     xenia-canary              # XBOX360
-    rpcs3                     # PS3
+    # rpcs3                     # PS3 (build issues)
     ppsspp                    # PSP
     melonds                   # DS
-    # vita3k                    # PS Vita
+    # vita3k                    # PS Vita (build issues)
     azahar                    # 3DS
     cemu                      # Wii U
     eden                      # Nintendo Switch
