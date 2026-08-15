@@ -29,6 +29,7 @@
       # Desktop Modules
       ./modules/desktop/niri.nix
       ./modules/desktop/dms.nix
+      ./modules/desktop/theming.nix
 
       # Master File for all packages + options
       ./modules/packages/packages.nix

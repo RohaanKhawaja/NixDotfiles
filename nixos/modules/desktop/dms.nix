@@ -42,16 +42,6 @@ in
     ];
   };
 
-  # GTK Stuff for dracula theme
-  programs.dconf = {
-    enable = true;
-    profiles.user.databases = [{
-      settings."org/gnome/desktop/interface" = {
-        gtk-theme = "Dracula";
-        color-scheme = "prefer-dark";
-      };
-    }];
-  };
 
   # DMS preferred battery device
   environment.sessionVariables = {

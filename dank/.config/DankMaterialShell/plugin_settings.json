@@ -97,7 +97,7 @@
     "enabled": true,
     "trigger": ".",
     "pasteOnSelect": true,
-    "recentEmojis": "£"
+    "recentEmojis": "😭,£"
   },
   "dmsThemeSync": {
     "enabled": true

@@ -20,6 +20,8 @@ alias history='bat ~/.bash_history | rg'
 alias copyPath='pwd | wl-copy'
 alias treeCopy='tree | wl-copy'
 alias battery='echo "$(cat /sys/class/power_supply/BAT1/capacity)% - $(cat /sys/class/power_supply/BAT1/status)"'
+alias discord='discordo'
+alias dc='discordo'
 
 # Aliases for mounting/unmounting
 alias usbMount='sudo mount /dev/sda1 /mnt/usb && echo USB MOUNTED!'

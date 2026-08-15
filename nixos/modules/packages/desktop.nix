@@ -40,6 +40,7 @@
     qbittorrent               # Torrenting Client
     nicotine-plus             # P2P Music Client (Soulseek)
     switcheroo                # File convertor
+    networkmanagerapplet      # Advanced Network Manager GUI
 
     # Creative Tools
     # bambu-studio            # 3D Printing Slicer (has build issues)

@@ -22,18 +22,6 @@
     openrazer-daemon          # Razer Peripheral helper
     jmtpfs                    # MPT USB file transfer for Android phones
 
-    # QT Framework
-    libsForQt5.qt5ct          # QT5 Framework
-    libsForQt5.qt5.qtwayland  # QT5 Wayland
-    kdePackages.qt6ct         # QT6 Configuration
-    kdePackages.qtwayland     # QT6 Wayland
-
-    # GTK Framework
-    adw-gtk3
-
-    # Colour Themeing
-    matugen
-    dracula-theme
   ];
 
 }

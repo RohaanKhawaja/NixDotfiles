@@ -9,13 +9,6 @@
   # Enable XWayland support
   programs.xwayland.enable = true;
 
-  # Cursor theme and QT Colour Scheming
-  environment.sessionVariables = {
-    XCURSOR_THEME = "BreezeX-RosePine-Linux";
-    XCURSOR_SIZE = "24";
-    QT_QPA_PLATFORMTHEME = "qt6ct";
-  };
-
   # To allow for KDE connect to work
   xdg.portal = {
     enable = true;
@@ -25,13 +18,6 @@
   # Systemd start process
   systemd.user.extraConfig = ''
     DefaultEnvironment="WAYLAND_DISPLAY=%E" "XDG_CURRENT_DESKTOP=niri"
-  '';
-
-  # GTK cursor settings for XWayland apps
-  environment.etc."gtk-3.0/settings.ini".text = ''
-      [Settings]
-      gtk-cursor-theme-name=BreezeX-RosePine-Linux
-      gtk-cursor-theme-size=24
   '';
 
   # Desktop Specific packages
