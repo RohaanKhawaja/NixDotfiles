@@ -152,3 +152,6 @@ end
 
 vim.keymap.set("n", "gF",         tmux_open({ "split-window", "-v" }), { desc = "Open file under cursor in tmux split" })
 vim.keymap.set("n", "<Leader>gn", tmux_open({ "new-window" }),         { desc = "Open file under cursor in tmux window" })
+
+vim.keymap.set("n", "<C-j>", "<C-d>zz", { desc = "Scroll down half page centred" })
+vim.keymap.set("n", "<C-k>", "<C-u>zz", { desc = "Scroll up half page centred" })

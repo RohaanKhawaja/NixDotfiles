@@ -323,8 +323,8 @@ recent-windows {
     binds {
         Alt+Tab         { next-window scope="workspace"; }
         Alt+Shift+Tab   { previous-window scope="workspace"; }
-        Alt+grave       { next-window     filter="app-id"; }
-        Alt+Shift+grave { previous-window filter="app-id"; }
+        Alt+grave       { next-window      filter="app-id" scope="all"; }
+        Alt+Shift+grave { previous-window filter="app-id" scope="all"; }
 
         // Mod+Tab         { next-window; }
         // Mod+Shift+Tab   { previous-window; }
