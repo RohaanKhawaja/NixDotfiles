@@ -800,10 +800,10 @@
   "desktopWidgetGroups": [],
   "builtInPluginSettings": {
     "dms_settings_search": {
-      "trigger": "$"
+      "trigger": "%"
     },
     "dms_clipboard_search": {
-      "trigger": "cb"
+      "trigger": "$"
     }
   },
   "clipboardClickToPaste": false,

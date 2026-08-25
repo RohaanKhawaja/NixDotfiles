@@ -299,7 +299,8 @@ binds {
     Mod+SHIFT+C hotkey-overlay-title="Toggle Colour Picker" { spawn "dms" "ipc" "call" "color-picker" "toggle"; }
     Mod+ALT+C hotkey-overlay-title="Toggle CPU Usage Stats" { spawn "dms" "ipc" "call" "widget" "toggle" "cpuUsage"; }
     Mod+ALT+SHIFT+C hotkey-overlay-title="Toggle Memory Usage Stats" { spawn "dms" "ipc" "call" "widget" "toggle" "memUsage"; }
-    Mod+ALT+P hotkey-overlay-title="Toggle KDE Connect" { spawn "dms" "ipc" "call" "widget" "toggle" "dankKDEConnect"; }
+    Mod+P hotkey-overlay-title="Toggle KDE Connect" { spawn "dms" "ipc" "call" "widget" "toggle" "dankKDEConnect"; }
+    Mod+ALT+P hotkey-overlay-title="Toggle wallpaper Carousel" {spawn "dms" "ipc" "wallpaperCarousel" "toggle"; }
 }
 
 recent-windows {

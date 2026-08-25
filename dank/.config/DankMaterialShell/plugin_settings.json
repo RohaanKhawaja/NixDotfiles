@@ -91,7 +91,9 @@
     "showMetrics": true,
     "soundProfile": "bongo",
     "mouseEnabled": true,
-    "metricsInBar": true
+    "metricsInBar": true,
+    "catYOffset": 3,
+    "showHints": true
   },
   "emojiLauncher": {
     "enabled": true,
@@ -101,5 +103,13 @@
   },
   "dmsThemeSync": {
     "enabled": true
+  },
+  "wallpaperCarousel": {
+    "enabled": true,
+    "overlayOpacity": 80,
+    "itemWidth": 300,
+    "cornerRadius": 0,
+    "holdDelay": 1500,
+    "expandMultiplier": 120
   }
 }

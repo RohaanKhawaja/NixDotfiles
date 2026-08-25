@@ -41,6 +41,7 @@
     nicotine-plus             # P2P Music Client (Soulseek)
     switcheroo                # File convertor
     networkmanagerapplet      # Advanced Network Manager GUI
+    universal-android-debloater # Android ADB Debloater
 
     # Creative Tools
     # bambu-studio            # 3D Printing Slicer (has build issues)
