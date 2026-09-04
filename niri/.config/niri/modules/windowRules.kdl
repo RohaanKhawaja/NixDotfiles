@@ -30,6 +30,13 @@ window-rule {
     open-floating true
 }
 
+// Open QR code scanner centered and floating
+window-rule{
+  match app-id="zbar"
+  open-floating true
+
+}
+
 window-rule {
     // This app-id regular expression will work for both:
     // - host Firefox (app-id is "firefox")

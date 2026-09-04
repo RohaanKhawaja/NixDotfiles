@@ -37,6 +37,3 @@ stow directory1 directory2 ...
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 and then install it using `<CTRL+S> + I`
-
-- asdad
-    - asda

@@ -23,6 +23,7 @@ alias treeCopy='tree | wl-copy'
 alias battery='echo "$(cat /sys/class/power_supply/BAT1/capacity)% - $(cat /sys/class/power_supply/BAT1/status)"'
 alias discord='discordo'
 alias dc='discordo'
+alias qr='zbarcam /dev/video0'
 
 # Aliases for mounting/unmounting
 alias usbMount='sudo mount /dev/sda1 /mnt/usb && echo USB MOUNTED!'
@@ -38,6 +39,7 @@ alias ns="nix-search-tv print | fzf --preview 'nix-search-tv preview {}' --schem
 alias ni='nix-shell -p'
 alias ng='sudo nix-env --list-generations --profile /nix/var/nix/profiles/system'
 alias nc='sudo nix-collect-garbage'
+alias ncd='sudo nix-collect-garbage -d'
 
 # Git Related Aliases
 alias gs='git status'

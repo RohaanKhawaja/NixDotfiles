@@ -662,7 +662,7 @@
         }
       ],
       "spacing": 4,
-      "innerPadding": 4,
+      "innerPadding": -8,
       "bottomGap": 0,
       "transparency": 0,
       "widgetTransparency": 0.3,
@@ -671,7 +671,7 @@
       "maximizeWidgetIcons": false,
       "maximizeWidgetText": false,
       "removeWidgetPadding": false,
-      "widgetPadding": 8,
+      "widgetPadding": 10,
       "gothCornersEnabled": false,
       "gothCornerRadiusOverride": false,
       "gothCornerRadiusValue": 12,
@@ -700,7 +700,8 @@
       "shadowOpacity": 60,
       "shadowColorMode": "text",
       "shadowCustomColor": "#000000",
-      "clickThrough": true
+      "clickThrough": true,
+      "barInsetPadding": 5
     }
   ],
   "desktopClockEnabled": false,

@@ -40,6 +40,7 @@ in
     unzip                     # Zip file utility
     yt-dlp                    # Youtube Video/audio downloader
     scrcpy                    # Screen mirroring tool over USB for Android
+    zbar                      # QR Code Scanner
 
     # CLI Apps
     btop                      # System Resource Monitor
