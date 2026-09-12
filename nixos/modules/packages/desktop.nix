@@ -47,6 +47,7 @@
     # bambu-studio            # 3D Printing Slicer (has build issues)
     kicad                     # Circuit & PCB Design Suite
     freecad                   # General CAD
+    openscad                  # Parametric CAD Software
     ltspice                   # Circuit Simulation
     drawio                    # Flowcharts and Diagrams
     inkscape                  # Vector Graphics Editor

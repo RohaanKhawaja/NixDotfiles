@@ -35,6 +35,7 @@ alias androidUnmount='sudo fusermount -uz /mnt/phone'
 alias nr='sudo nixos-rebuild switch'
 alias nt='sudo nixos-rebuild test'
 alias nu='sudo nix-channel --update'
+alias nru='sudo nixos-rebuild switch --upgrade'
 alias ns="nix-search-tv print | fzf --preview 'nix-search-tv preview {}' --scheme history"
 alias ni='nix-shell -p'
 alias ng='sudo nix-env --list-generations --profile /nix/var/nix/profiles/system'

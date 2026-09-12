@@ -9,7 +9,7 @@ window-rule {
     match app-id="vesktop"
     match app-id="org.gnome.Rhythmbox3"
     match title="Settings"
-    match title="Steam"
+    // match app-id="steam" (jank with certain games)
 
     opacity 0.85
     clip-to-geometry true

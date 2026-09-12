@@ -19,6 +19,7 @@
       ./modules/system/networking.nix
       ./modules/system/maintenance.nix
       ./modules/system/audio.nix
+      ./modules/system/nixld.nix
 
       # Virtualisation
       ./modules/system/vm.nix

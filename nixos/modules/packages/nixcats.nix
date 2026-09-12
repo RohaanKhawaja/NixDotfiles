@@ -131,7 +131,7 @@
             owner = "hamidi-dev";
             repo = "org-super-agenda.nvim";
             rev = "main";
-            sha256 = "sha256-4O7wyPoYFtGLi/TYy9U6kildyr+RCpUsqb0vr4Aovw4=";
+            sha256 = "sha256-dBKG6TQ9Fd/jZGk0j4DQEHoF29VjpUT0gpAIDDJ/E8k=";
           };
         })
 

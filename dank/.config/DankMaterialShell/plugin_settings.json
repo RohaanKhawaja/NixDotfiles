@@ -19,6 +19,7 @@
   "commandRunner": {
     "enabled": true,
     "history": [
+      "fastfetch",
       "pkill discord",
       "pkill vesktop",
       "usbUnmount",
@@ -111,5 +112,9 @@
     "cornerRadius": 0,
     "holdDelay": 1500,
     "expandMultiplier": 120
+  },
+  "dankGifSearch": {
+    "enabled": true,
+    "trigger": "`"
   }
 }

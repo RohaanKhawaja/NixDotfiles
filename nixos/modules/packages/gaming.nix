@@ -18,7 +18,13 @@
     azahar                    # 3DS
     cemu                      # Wii U
     eden                      # Nintendo Switch
+
+    # Utility
+    protonup-qt               # Proton
   ];
+
+  # For performance optimisation
+  programs.gamemode.enable = true;
 
   # Steam
   programs.steam = {
