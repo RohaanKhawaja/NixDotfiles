@@ -779,9 +779,9 @@
   },
   "desktopWidgetInstances": [
     {
-      "id": "dw_1786547073655_njepwrge2",
-      "widgetType": "cavaVisualizer",
-      "name": "Cava Visualizer",
+      "id": "dw_1789327428757_nzyq7fhlb",
+      "widgetType": "enderPulse",
+      "name": "EnderPulse",
       "enabled": true,
       "config": {
         "displayPreferences": [

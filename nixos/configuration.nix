@@ -20,6 +20,7 @@
       ./modules/system/maintenance.nix
       ./modules/system/audio.nix
       ./modules/system/nixld.nix
+      ./modules/system/scripts.nix
 
       # Virtualisation
       ./modules/system/vm.nix

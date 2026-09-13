@@ -21,6 +21,7 @@
       atk
       at-spi2-atk
       at-spi2-core
+      dracula-theme
 
       # X11
       libx11
