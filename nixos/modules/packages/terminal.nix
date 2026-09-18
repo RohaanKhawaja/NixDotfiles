@@ -41,6 +41,7 @@ in
     yt-dlp                    # Youtube Video/audio downloader
     scrcpy                    # Screen mirroring tool over USB for Android
     zbar                      # QR Code Scanner
+    glow                      # CLI renderer for different formats (ie md)
 
     # CLI Apps
     btop                      # System Resource Monitor

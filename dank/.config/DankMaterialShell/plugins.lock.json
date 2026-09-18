@@ -1,0 +1,63 @@
+{
+  "lockfileVersion": 1,
+  "plugins": {
+    "bongoCat": {
+      "repo": "https://github.com/hthienloc/dms-bongo-cat",
+      "commit": "237b1a34b2fb8d90e4f4c8656af758c3d7dab638"
+    },
+    "calculator": {
+      "repo": "https://github.com/rochacbruno/DankCalculator",
+      "commit": "1db5865419a40a33171a475855a59e0b8bf7187f"
+    },
+    "commandRunner": {
+      "repo": "https://github.com/devnullvoid/dms-command-runner",
+      "commit": "5c2cab404335ceb96c60cf9e97a9682994209cd4"
+    },
+    "dankGifSearch": {
+      "repo": "https://github.com/AvengeMedia/dms-plugins",
+      "path": "DankGifSearch",
+      "commit": "6fc7f25bfb24f93b6488fb8a36ed67b5f242abdb"
+    },
+    "dankKDEConnect": {
+      "repo": "https://github.com/AvengeMedia/dms-plugins",
+      "path": "DankKDEConnect",
+      "commit": "6fc7f25bfb24f93b6488fb8a36ed67b5f242abdb"
+    },
+    "dmsThemeSync": {
+      "repo": "https://github.com/arqueon/dms-theme-sync",
+      "commit": "c73dbcc4f50957a73e7194acfe2aaa9dae9d32b6"
+    },
+    "emojiLauncher": {
+      "repo": "https://github.com/devnullvoid/dms-emoji-launcher",
+      "commit": "8ff394e3ddfcb2fd755ed2e7b4c6f01f3e26e596"
+    },
+    "enderPulse": {
+      "repo": "https://github.com/iquantecho/enderpulse",
+      "commit": "7b908fa130a2d3c5cd43e2bfdcb067ee77735c42"
+    },
+    "fdSearch": {
+      "repo": "https://codeberg.org/massimopavoni/DankFdSearch",
+      "commit": "74e984fe30c5a9daf0a29b167212653fb7971e4c"
+    },
+    "niriWindows": {
+      "repo": "https://github.com/rochacbruno/DankNiriWindows",
+      "commit": "f2c0b0fc0325e3299257cc5d1895069a3d49247f"
+    },
+    "powerOptions": {
+      "repo": "https://github.com/Nazahim/PowerOptions",
+      "commit": "95fa7949fd9614a21bcc7a14ff8cc917a7208cf8"
+    },
+    "volumeMixer": {
+      "repo": "https://github.com/cwelsys/dms-volume-mixer",
+      "commit": "353e00b659a16df07105b16c8790e6b526743471"
+    },
+    "wallpaperCarousel": {
+      "repo": "https://github.com/motor-dev/wallpaperCarousel",
+      "commit": "c08fbb92c39d4d778bb08e520cfd96e395594440"
+    },
+    "webSearch": {
+      "repo": "https://github.com/devnullvoid/dms-web-search",
+      "commit": "821f5b437ea96739ce1cbc85ce324fb55e8884bb"
+    }
+  }
+}

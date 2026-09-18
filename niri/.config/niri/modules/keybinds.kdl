@@ -198,14 +198,14 @@ binds {
     Mod+Period { expel-window-from-column; }
 
     // Cycle through widths set in preset-column-widths.
-    Mod+R { switch-preset-column-width; }
+    Mod+F { switch-preset-column-width; }
     // Cycling through the presets in reverse order is also possible.
     Mod+Shift+R { switch-preset-column-width-back; }
 
     Mod+Ctrl+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
 
-    Mod+F { maximize-column; }
+    Mod+R { maximize-column; }
     Mod+Shift+F { fullscreen-window; }
 
     // While maximize-column leaves gaps and borders around the window,

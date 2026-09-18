@@ -150,6 +150,19 @@ local function tmux_open(args)
   end
 end
 
+vim.keymap.set("n", "<Leader>vg", function()
+  local file = vim.fn.expand("%:p")
+  if file == "" then
+    vim.notify("No file to preview", vim.log.levels.WARN)
+    return
+  end
+  if vim.env.TMUX then
+    vim.fn.system({ "tmux", "split-window", "-h", "-l", "40%", "glow --pager " .. vim.fn.shellescape(file) })
+  else
+    vim.fn.system({ "kitty", "--title", "glow", "-e", "glow", "--pager", file })
+  end
+end, { desc = "Preview file with glow in tmux split" })
+
 vim.keymap.set("n", "gF",         tmux_open({ "split-window", "-v" }), { desc = "Open file under cursor in tmux split" })
 vim.keymap.set("n", "<Leader>gn", tmux_open({ "new-window" }),         { desc = "Open file under cursor in tmux window" })
 
