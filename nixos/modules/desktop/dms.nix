@@ -4,7 +4,8 @@
 
 let
   unstable = import (builtins.fetchTarball {
-    url = "https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz";
+    url    = "https://github.com/NixOS/nixpkgs/archive/e8be7818e19ada32105a8af937a6a473b38167ca.tar.gz";
+    sha256 = "06sil8mb0psrx1x49yfrxxr7sd6fqjz77amyx7bhr7rp3216gpyh";
   }) { config = config.nixpkgs.config; };
 in
 
