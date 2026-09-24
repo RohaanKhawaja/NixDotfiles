@@ -6,7 +6,7 @@
   environment.systemPackages = with pkgs; [
     # Browsers
     firefox                   # Primary Browser
-    brave                     # Chromium-Based Browser
+    chromium                  # Chromium-Based Browser
 
     # Communication
     vesktop                   # Discord Client

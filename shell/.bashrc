@@ -24,6 +24,7 @@ alias battery='echo "$(cat /sys/class/power_supply/BAT1/capacity)% - $(cat /sys/
 alias discord='discordo'
 alias dc='discordo'
 alias qr='zbarcam /dev/video0'
+alias freboot='sudo systemctl reboot --firmware-setup'
 
 # Aliases for mounting/unmounting
 alias usbMount='sudo mount /dev/sda1 /mnt/usb && echo USB MOUNTED!'

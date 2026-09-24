@@ -21,7 +21,7 @@
     cups-pk-helper            # Polkit helper
     openrazer-daemon          # Razer Peripheral helper
     jmtpfs                    # MPT USB file transfer for Android phones
-
+    exfatprogs                # ExFAT utils
   ];
 
 }
