@@ -21,6 +21,7 @@
       ./modules/system/audio.nix
       ./modules/system/nixld.nix
       ./modules/system/scripts.nix
+      ./modules/system/services.nix
 
       # Virtualisation
       ./modules/system/vm.nix
@@ -46,7 +47,7 @@
   # Set User attributes
   myConfig = {
     username = "rohaan";
-    hostname = "nixos";
+    hostname = "RohaanLT-Nix";
     homeDir = "/home/rohaan";
     desktop = "niri"; # Set to appropriate desktop
   };

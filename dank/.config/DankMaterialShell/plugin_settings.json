@@ -38,7 +38,7 @@
   },
   "dankKDEConnect": {
     "enabled": true,
-    "selectedDeviceId": "a4e8250f4e63497097e7e455271a1b84"
+    "selectedDeviceId": ""
   },
   "todoLauncher": {
     "enabled": true,
@@ -104,7 +104,10 @@
     "recentEmojis": "👍,😭,£"
   },
   "dmsThemeSync": {
-    "enabled": true
+    "enabled": true,
+    "folderColorBaseThemeDark": "",
+    "folderColorBaseThemeLight": "",
+    "folderColorBaseTheme": ""
   },
   "wallpaperCarousel": {
     "enabled": true,

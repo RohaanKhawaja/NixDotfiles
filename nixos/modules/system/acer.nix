@@ -38,7 +38,7 @@
   # Mount shared partition
   fileSystems."/mnt/shared" = {
     device  = "/dev/disk/by-label/shared";
-    fsType  = "exfat";
-    options = [ "uid=1000" "gid=100" "fmask=0000" "dmask=0000" "umask=0000" ];
+    fsType  = "ntfs3";
+    options = [ "uid=1000" "gid=100" "umask=0000" "rw" "exec" ];
   };
 }
