@@ -556,7 +556,9 @@
   "niriOutputSettings": {},
   "hyprlandOutputSettings": {},
   "displayProfiles": {},
-  "activeDisplayProfile": {},
+  "activeDisplayProfile": {
+    "niri": ""
+  },
   "displayProfileAutoSelect": false,
   "displayShowDisconnected": false,
   "displaySnapToEdge": true,
@@ -770,10 +772,16 @@
       },
       "positions": {
         "eDP-1": {
+          "width": 1920,
+          "height": 1200,
+          "x": 0,
+          "y": 0
+        },
+        "DP-1": {
           "width": 240,
           "height": 200,
           "x": 840,
-          "y": 500
+          "y": 440
         }
       }
     }

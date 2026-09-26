@@ -34,6 +34,7 @@ alias androidUnmount='sudo fusermount -uz /mnt/phone'
 
 # Nix Related Aliases
 alias nr='sudo nixos-rebuild switch'
+alias nrr='sudo nixos-rebuild switch && sudo reboot'
 alias nt='sudo nixos-rebuild test'
 alias nu='sudo nix-channel --update'
 alias nru='sudo nixos-rebuild switch --upgrade'
