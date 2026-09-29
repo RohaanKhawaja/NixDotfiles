@@ -90,10 +90,14 @@ truncation_symbol = "…/"
 "Music" = "󰝚 "
 "Pictures" = " "
 "Developer" = "󰲋 "
+"/mnt/shared" = "󰋊 "
+"/mnt/usb" = "  "
+"/mnt/sd" = " "
+"/mnt/android" = "󰀲 "
 
 [git_branch]
 #symbol = ""
-symbol = "" 
+symbol = ""
 style = "bg:color_cyan"
 format = '[[ $symbol $branch ](fg:color_bg1 bg:color_cyan)]($style)'
 
@@ -174,7 +178,7 @@ format = '[[  $time ](fg:color_fg0 bg:color_bg1)]($style)'
 disabled = false
 
 [character]
-disabled = false 
+disabled = false
 success_symbol = '[>](bold fg:color_purple)'
 error_symbol = '[>](bold fg:color_red)'
 vimcmd_symbol = '[](bold fg:color_green)'
