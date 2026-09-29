@@ -8,16 +8,14 @@ Provides mod tap functionality and additional function layers
    Interception driver on Windows causes issues with game anti-cheats and is not included as a result.
 |#
 
-;; Specific targeting for linux (moving to new laptop soon but just in case)
-#|
+;; Specific keyboard targeting (only on linux)
 (defcfg
   linux-dev-names-include (
-    "PRiMAX HP FY23 OMEN 16 KBM Keyboard"
-    "PRiMAX HP FY23 OMEN 16 KBM Keypad"
-    "PRiMAX HP FY23 OMEN 16 KBM Consumer"
+    "AT Translated Set 2 keyboard"
+    "10251825:00 1025:1825 Keyboard"
+    "Acer WMI hotkeys"
   )
 )
-|#
 
 
 ;; Timeouts
@@ -43,6 +41,7 @@ Provides mod tap functionality and additional function layers
   f13 calc prtsc
   ins  home pgup
   pause end  pgdn
+  f23
 )
 
 ;; Mod-tap definitions
@@ -71,11 +70,12 @@ Provides mod tap functionality and additional function layers
   f13 calc prtsc
   ins  home pgup
   pause end  pgdn
+  @capsLockModTap
 )
 
 ;; Define the first function layer (f2/f3, menu/rctl map to brightness up/down [not working])
 (deflayer fn1Layer
-  XX  XX   f2   f3   XX   XX   XX   XX   XX   XX   XX  XX  XX  XX
+  XX  XX   XX   XX   brdn   brup   XX   XX   XX   XX   XX  XX  XX  XX
   grv  1    prev    pp    next    XX    XX    XX    XX    XX    XX    XX    XX    bspc
   tab  home    up    end    pgup    XX    XX    XX    XX    XX    XX    XX    XX    XX
   @escModTap left    down    right    pgdn    lsft    XX    XX    XX    prev    pp    next    ret
@@ -84,6 +84,7 @@ Provides mod tap functionality and additional function layers
   f13 calc prtsc
   ins  home pgup
   pause end  pgdn
+  @capsLockModTap
 )
 
 ;;Define  the second function layer
@@ -97,5 +98,6 @@ Provides mod tap functionality and additional function layers
   f13 calc prtsc
   ins  home pgup
   pause end  pgdn
+  @capsLockModTap
 )
 
