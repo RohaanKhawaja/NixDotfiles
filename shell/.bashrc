@@ -68,6 +68,37 @@ function vg() {
   [ -n "$result" ] && nvim "$(echo "$result" | cut -d: -f1)" +"$(echo "$result" | cut -d: -f2)"
 }
 
+# Concatenate config files in directory tree and copy to clipboard
+catdir() {
+  local dir="${1:-.}"
+  local output=""
+  while IFS= read -r -d '' file; do
+    output+="=== $file ===\n"
+    output+="$(cat "$file")\n\n"
+  done < <(find "$dir" -type f \( \
+    -name "*.nix" \
+    -o -name "*.lua" \
+    -o -name "*.toml" \
+    -o -name "*.kdl" \
+    -o -name "*.kbd" \
+    -o -name "*.json" \
+    -o -name "*.yaml" \
+    -o -name "*.yml" \
+    -o -name "*.sh" \
+    -o -name "*.bash" \
+    -o -name "*.conf" \
+    -o -name "*.ini" \
+    -o -name "*.txt" \
+    -o -name "*.md" \
+  \) -print0)
+  printf "%b" "$output" | wl-copy
+  echo "Copied $(find "$dir" -type f \( -name "*.nix" -o -name "*.lua" -o -name "*.toml" -o -name "*.kdl" -o -name "*.kbd" -o -name "*.json" -o -name "*.yaml" -o -name "*.yml" -o -name "*.sh" -o -name "*.bash" -o -name "*.conf" -o -name "*.ini" -o -name "*.txt" -o -name "*.md" \) | wc -l) files to clipboard"
+}
+
+# Make folder then immediately cd into it
+fdir() {
+  mkdir -p "$1" && cd "$1"
+}
 # Org quick access
 alias oi="nvim ~/Documents/org/inbox.org"
 alias ot="nvim ~/Documents/org/tasks.org"

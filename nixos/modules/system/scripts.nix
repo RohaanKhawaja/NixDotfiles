@@ -30,7 +30,7 @@ EOF
       export GTK_THEME=Adwaita
       export GTK_APPLICATION_PREFER_DARK_THEME=0
 
-      cd ~/Documents/University/Year3/SunSat/borealis/GMAT
+      cd /mnt/shared/Documents/University/Year3/SunSat/borealis/GMAT
       exec ./bin/GMAT-R2026a
     '')
   ];

@@ -32,6 +32,7 @@
     speedcrunch               # Calculator
     zed-editor                # Code Editor
     xournalpp                 # Handwriting App
+    evince                    # PDF/Document Viewer
 
     # File Management/Downloads
     nautilus                  # Graphical File Manager

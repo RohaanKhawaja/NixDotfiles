@@ -85,15 +85,19 @@ truncation_length = 3
 truncation_symbol = "…/"
 
 [directory.substitutions]
+"/mnt/shared/Documents/University" = " "
+"/mnt/shared/Media/Music" = "󰝚 "
+"/mnt/shared" = "󰋊 "
+"/mnt/shared/Documents" = "󰈙 "
+"/mnt/shared/Media/Pictures" = " "
+"/mnt/usb" = "  "
+"/mnt/sd" = " "
+"/mnt/android" = "󰀲 "
 "Documents" = "󰈙 "
 "Downloads" = " "
 "Music" = "󰝚 "
 "Pictures" = " "
 "Developer" = "󰲋 "
-"/mnt/shared" = "󰋊 "
-"/mnt/usb" = "  "
-"/mnt/sd" = " "
-"/mnt/android" = "󰀲 "
 
 [git_branch]
 #symbol = ""

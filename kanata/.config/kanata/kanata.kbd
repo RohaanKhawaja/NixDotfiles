@@ -13,7 +13,6 @@ Provides mod tap functionality and additional function layers
   linux-dev-names-include (
     "AT Translated Set 2 keyboard"
     "10251825:00 1025:1825 Keyboard"
-    "Acer WMI hotkeys"
   )
 )
 

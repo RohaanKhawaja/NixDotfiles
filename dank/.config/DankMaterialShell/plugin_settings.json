@@ -101,7 +101,7 @@
     "enabled": true,
     "trigger": ".",
     "pasteOnSelect": true,
-    "recentEmojis": "👍,😭,£"
+    "recentEmojis": "👅,🥺,👍,😭,£"
   },
   "dmsThemeSync": {
     "enabled": true,
@@ -145,6 +145,8 @@
     ],
     "barLength": 323,
     "palette": "material",
-    "backgroundOpacity": 0
+    "backgroundOpacity": 0,
+    "audioBackend": "auto",
+    "mode": "radial"
   }
 }
