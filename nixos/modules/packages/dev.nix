@@ -8,6 +8,7 @@ let
     pip                       # Python Package Manager
     virtualenv                # Virtual Environments
     manim                     # Mathematical Animation Engine
+    matplotlib                # Plotting tool
   ]);
 in
 

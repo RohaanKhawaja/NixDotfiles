@@ -764,7 +764,7 @@
       "id": "dw_1792082587516_ypoafl5iy",
       "widgetType": "cavaVisualizer",
       "name": "Cava Visualizer",
-      "enabled": true,
+      "enabled": false,
       "config": {
         "displayPreferences": [
           "all"
@@ -775,7 +775,9 @@
         "colorChoice": "primary",
         "sensitivity": 77,
         "curvePoints": 128,
-        "barSpacing": 0
+        "barSpacing": 0,
+        "silenceTimeout": 4,
+        "barWidth": 3
       },
       "positions": {
         "eDP-1": {

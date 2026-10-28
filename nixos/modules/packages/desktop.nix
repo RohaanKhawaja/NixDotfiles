@@ -16,7 +16,7 @@
     pear-desktop              # Youtube Music Client
     vlc                       # Media Player
     mpv                       # Media Player
-    rhythmbox                 # Music Playeer
+    lollypop                  # Music Playeer
 
     # Terminal Emulator
     kitty
