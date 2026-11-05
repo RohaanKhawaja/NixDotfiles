@@ -11,8 +11,6 @@ window-rule {
     match app-id="lollypop"
     match title="Settings"
     match title="New Tab"
-    match title="Claude"
-    match title="Outlook"
     // match app-id="libreoffice-writer" (can't make my mind up on if it looks good or not)
     // match app-id="steam" (jank with certain games)
 

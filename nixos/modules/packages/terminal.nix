@@ -46,6 +46,7 @@ in
     # CLI Apps
     btop                      # System Resource Monitor
     nvtopPackages.intel       # Intel GPU resource monitor
+    powertop                  # Power Consumption Monitor
     discordo                  # Client for Discord
     #tdf                      # PDF Viewer (current version broken in tmux)
     img-cat                   # Image Viewer
