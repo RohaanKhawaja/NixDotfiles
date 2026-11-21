@@ -43,6 +43,9 @@
         yaml-language-server              # YAML
         taplo                             # TOML
         cmake-language-server             # CMake
+        tinymist                          # Typst LSP
+        typst                             # Typst Compiler
+        websocat                          # Needed by typst-preview.nvim
       ];
     };
 
@@ -85,6 +88,9 @@
 
         # LaTeX
         vimtex
+
+        # Typst
+        # typst-preview-nvim
 
         # Orgmode
         orgmode

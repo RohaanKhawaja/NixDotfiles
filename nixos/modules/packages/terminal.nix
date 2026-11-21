@@ -26,6 +26,7 @@ in
     stow                      # Dotfiles Management
     git                       # Git
     gh                        # GitHub
+    android-tools             # ADB and fastboot
 
     # CLI Tools
     zoxide                    # Better CD
@@ -91,5 +92,6 @@ in
   environment.sessionVariables = {
     RIPGREP_CONFIG_PATH = "${config.myConfig.homeDir}/.ripgreprc";
   };
+
 
 }

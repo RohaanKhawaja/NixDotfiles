@@ -46,8 +46,10 @@ window-rule {
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id="steam" title="Friends List"
     open-floating true
+    open-focused false
     default-column-width { fixed 480; }
     default-window-height { fixed 270; }
+    default-floating-position x=16 y=16 relative-to="bottom-right"
 }
 
 // Example: block out two password managers from screen capture.

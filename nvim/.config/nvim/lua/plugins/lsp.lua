@@ -74,3 +74,11 @@ vim.lsp.config('lua_ls', {
   },
 })
 vim.lsp.enable('lua_ls')
+
+-- Typst LSP (exports the PDF on save so tdf can reload it)
+vim.lsp.config('tinymist', {
+  settings = {
+    exportPdf = "onSave",
+  },
+})
+vim.lsp.enable('tinymist')

@@ -22,6 +22,7 @@ in
     texliveFull               # LaTeX
     openjdk17                 # Java (JDK)
     zig                       # Zig Compiler
+    typst                     # Typst Compiler
 
 
     # Build Systems

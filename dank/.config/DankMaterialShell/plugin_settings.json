@@ -19,10 +19,10 @@
   "commandRunner": {
     "enabled": true,
     "history": [
+      "pkill vesktop",
       "gmat",
       "fastfetch",
       "pkill discord",
-      "pkill vesktop",
       "usbUnmount",
       "pkill qbittorrent",
       "pkill kdeconnect",
@@ -101,7 +101,7 @@
     "enabled": true,
     "trigger": ".",
     "pasteOnSelect": true,
-    "recentEmojis": "👅,🥺,👍,😭,£"
+    "recentEmojis": "🥀,🤤,👀,👅,🥺,👍,😭,£"
   },
   "dmsThemeSync": {
     "enabled": true,

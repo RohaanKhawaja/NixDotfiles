@@ -13,6 +13,7 @@
       "input" 	       # Raw input device access
       "plugdev"        # Peripheral device access
       "openrazer"
+      "adb"
     ];
   };
 

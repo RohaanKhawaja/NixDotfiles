@@ -2,7 +2,7 @@
 
 -- Enable spell checking automatically for certain filetypes
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = { "tex", "markdown", "text" },
+  pattern = { "tex", "markdown", "text", "typst" },
   callback = function()
     vim.opt_local.spelllang = "en_gb"
     vim.opt_local.spell = true
